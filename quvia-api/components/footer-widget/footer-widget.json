@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_footer_widget_footer_widgets",
+  "info": {
+    "name": "Footer-Widget",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "bx bx-chevrons-right",
+      "required": true
+    },
+    "text": {
+      "type": "string",
+      "default": "Web Site Protection",
+      "required": true
+    }
+  }
+}

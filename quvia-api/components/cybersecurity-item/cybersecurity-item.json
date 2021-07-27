@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_cybersecurity_item_cybersecurity_items",
+  "info": {
+    "name": "Cybersecurity-Item",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "bx bx-check",
+      "required": true
+    },
+    "text": {
+      "type": "string",
+      "default": "Managed Web Application",
+      "required": true
+    }
+  }
+}

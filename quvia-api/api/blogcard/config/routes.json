@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blogcards",
+      "handler": "blogcard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blogcards/count",
+      "handler": "blogcard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blogcards/:id",
+      "handler": "blogcard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blogcards",
+      "handler": "blogcard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blogcards/:id",
+      "handler": "blogcard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blogcards/:id",
+      "handler": "blogcard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

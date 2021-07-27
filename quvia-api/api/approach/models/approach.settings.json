@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "approaches",
+  "info": {
+    "name": "approach",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "default": "Our Approach To Security",
+      "required": true
+    },
+    "shortDesc": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "required": true
+    },
+    "lists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "approach-list.approach-list"
+    }
+  }
+}

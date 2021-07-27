@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cybersecurity",
+      "handler": "cybersecurity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cybersecurity",
+      "handler": "cybersecurity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cybersecurity",
+      "handler": "cybersecurity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pricingstwos",
+      "handler": "pricingstwo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pricingstwos/count",
+      "handler": "pricingstwo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pricingstwos/:id",
+      "handler": "pricingstwo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pricingstwos",
+      "handler": "pricingstwo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pricingstwos/:id",
+      "handler": "pricingstwo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pricingstwos/:id",
+      "handler": "pricingstwo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

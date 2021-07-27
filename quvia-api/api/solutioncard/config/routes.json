@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/solutioncards",
+      "handler": "solutioncard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/solutioncards/count",
+      "handler": "solutioncard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/solutioncards/:id",
+      "handler": "solutioncard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/solutioncards",
+      "handler": "solutioncard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/solutioncards/:id",
+      "handler": "solutioncard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/solutioncards/:id",
+      "handler": "solutioncard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

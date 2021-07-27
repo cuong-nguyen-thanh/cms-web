@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/featurecards",
+      "handler": "featurecard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/featurecards/count",
+      "handler": "featurecard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/featurecards/:id",
+      "handler": "featurecard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/featurecards",
+      "handler": "featurecard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/featurecards/:id",
+      "handler": "featurecard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/featurecards/:id",
+      "handler": "featurecard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

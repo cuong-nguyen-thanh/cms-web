@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/completecards",
+      "handler": "completecard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/completecards/count",
+      "handler": "completecard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/completecards/:id",
+      "handler": "completecard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/completecards",
+      "handler": "completecard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/completecards/:id",
+      "handler": "completecard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/completecards/:id",
+      "handler": "completecard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

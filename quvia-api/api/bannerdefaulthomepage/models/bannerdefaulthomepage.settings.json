@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "bannerdefaulthomepages",
+  "info": {
+    "name": "banner Default Home Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "string",
+      "default": "All Research up to Blockchain Interoperability is completed",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "default": "Modern Information Protect from Hackers",
+      "required": true
+    },
+    "shortDesc": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto laborum eaque! Deserunt maxime, minus quas molestiae reiciendis esse natus nisi iure.",
+      "required": true
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Booking Now",
+      "required": true
+    },
+    "btnTextTwo": {
+      "type": "string",
+      "default": "About Us",
+      "required": true
+    },
+    "videoLink": {
+      "type": "string",
+      "default": "https://www.youtube.com/watch?v=sdpxddDzXfE",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/securitycards",
+      "handler": "securitycard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/securitycards/count",
+      "handler": "securitycard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/securitycards/:id",
+      "handler": "securitycard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/securitycards",
+      "handler": "securitycard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/securitycards/:id",
+      "handler": "securitycard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/securitycards/:id",
+      "handler": "securitycard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

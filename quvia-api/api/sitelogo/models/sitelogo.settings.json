@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "sitelogos",
+  "info": {
+    "name": "sitelogo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

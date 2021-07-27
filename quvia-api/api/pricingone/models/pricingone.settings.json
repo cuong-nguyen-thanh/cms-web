@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricingones",
+  "info": {
+    "name": "pricing One",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Business",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "default": "$70",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing-features.pricing-features"
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Order Now",
+      "required": true
+    },
+    "class": {
+      "type": "string",
+      "default": "single-pricing",
+      "required": true
+    }
+  }
+}

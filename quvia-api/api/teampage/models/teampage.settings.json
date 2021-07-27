@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teampages",
+  "info": {
+    "name": "team Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "default": "Peter Pers",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "default": "Director",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "securitycards",
+  "info": {
+    "name": "security Card",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "flaticon-bug",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Malware Detection Removal",
+      "required": true
+    },
+    "shortDesc": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "required": true
+    }
+  }
+}

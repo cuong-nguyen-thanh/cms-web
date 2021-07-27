@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonialspages",
+  "info": {
+    "name": "testimonials Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "shortDesc": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore.",
+      "required": true
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "default": "Alen Meair",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "default": "Developer",
+      "required": true
+    }
+  }
+}

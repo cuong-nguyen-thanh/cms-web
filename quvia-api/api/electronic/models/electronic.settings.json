@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "electronics",
+  "info": {
+    "name": "electronic",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Innovative Electronic Protection of Your Office and Home Control Online",
+      "required": true
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "electronic-tab.electronic-tab"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

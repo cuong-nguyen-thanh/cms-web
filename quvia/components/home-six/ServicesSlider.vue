@@ -1,10 +1,10 @@
 <template>
-    <div class="services-area ptb-100">
+    <div class="services-area bg-color-f9f9f9 ptb-100">
         <div class="container">
             <div class="section-title-six">
-                <span>Our Services</span>
-                <h2>We Offer Best Cyber Security Solutions</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <span>Welcome to RepubliK</span>
+                <h2>The world’s first digital ecosystem</h2>
+                <p>RepubliK is a revolutionary ecosystem of digital tools, where talent and their audience can engage with each other in a mutually beneficial way.</p>
             </div>
 
             <div class="services-slider-content">
@@ -24,115 +24,15 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services-single-item">
-                                        <h3>Security Advisory</h3>
+                                        <h3>Problem</h3>
+                                        <p>The creator economy is broken.</p>
+                                        <p>The current ecosystem masquerades as a republic but is actually an oligopoly. We are led to believe that the system is fair and the share of the spoils equitable, but it is an illusion created by record labels, media companies, and social media platforms. In reality they dominate the economy for creative and artistic talent.</p>
 
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, vero corporis voluptates beatae pariatur laudantium, fugiat illum ab deserunt nostrum aliquid quisquam esse? Voluptatibus quia velit numquam esse porro ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, corporis Voluptatibus quia.</p>
-            
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi quasi cumque placeat fuga. Ea, eius nihil dolorem cumque</p>
-                                        
+                                        <p>RepubliK will be the creative commons built from the ground up to equitably distribute value by giving everyone a stake in the economy. </p>
+
                                         <NuxtLink  class="default-btn six" to="/about-us">
                                             <i class="bx bx-file"></i>
-                                            Learn More
-                                        </NuxtLink>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="services-img">
-                                        <img src="~/assets/images/services-slider/services-1.png" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </slide>
-
-                        <slide>
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="services-single-item">
-                                        <h3>Technical Assurance</h3>
-
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, vero corporis voluptates beatae pariatur laudantium, fugiat illum ab deserunt nostrum aliquid quisquam esse? Voluptatibus quia velit numquam esse porro ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, corporis Voluptatibus quia.</p>
-            
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi quasi cumque placeat fuga. Ea, eius nihil dolorem cumque</p>
-                                        
-                                        <NuxtLink  class="default-btn six" to="/about-us">
-                                            <i class="bx bx-file"></i>
-                                            Learn More
-                                        </NuxtLink>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="services-img">
-                                        <img src="~/assets/images/services-slider/services-2.png" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </slide>
-
-                        <slide>
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="services-single-item">
-                                        <h3>Assessment Services</h3>
-
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, vero corporis voluptates beatae pariatur laudantium, fugiat illum ab deserunt nostrum aliquid quisquam esse? Voluptatibus quia velit numquam esse porro ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, corporis Voluptatibus quia.</p>
-            
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi quasi cumque placeat fuga. Ea, eius nihil dolorem cumque</p>
-                                        
-                                        <NuxtLink  class="default-btn six" to="/about-us">
-                                            <i class="bx bx-file"></i>
-                                            Learn More
-                                        </NuxtLink>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="services-img">
-                                        <img src="~/assets/images/services-slider/services-3.png" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </slide>
-
-                        <slide>
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="services-single-item">
-                                        <h3>Threat Hunter</h3>
-
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, vero corporis voluptates beatae pariatur laudantium, fugiat illum ab deserunt nostrum aliquid quisquam esse? Voluptatibus quia velit numquam esse porro ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, corporis Voluptatibus quia.</p>
-            
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi quasi cumque placeat fuga. Ea, eius nihil dolorem cumque</p>
-                                        
-                                        <NuxtLink  class="default-btn six" to="/about-us">
-                                            <i class="bx bx-file"></i>
-                                            Learn More
-                                        </NuxtLink>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="services-img">
-                                        <img src="~/assets/images/services-slider/services-4.png" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </slide>
-
-                        <slide>
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="services-single-item">
-                                        <h3>Splunk Services</h3>
-
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, vero corporis voluptates beatae pariatur laudantium, fugiat illum ab deserunt nostrum aliquid quisquam esse? Voluptatibus quia velit numquam esse porro ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, corporis Voluptatibus quia.</p>
-            
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi quasi cumque placeat fuga. Ea, eius nihil dolorem cumque</p>
-                                        
-                                        <NuxtLink  class="default-btn six" to="/about-us">
-                                            <i class="bx bx-file"></i>
-                                            Learn More
+                                            Read More
                                         </NuxtLink>
                                     </div>
                                 </div>
@@ -140,6 +40,30 @@
                                 <div class="col-lg-6">
                                     <div class="services-img">
                                         <img src="~/assets/images/services-slider/services-5.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </slide>
+
+                        <slide>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="services-single-item">
+                                        <h3>Opportunity</h3>
+                                        <p>It’s estimated that there are 50 million people around the world who now consider themselves "creators".</p>
+                                        <p>Even more significantly though, 93% are amateurs struggling to make a living out of their passion.</p>
+                                        <p>While the current funding ecosystem for creative and artistic talent has evolved in the last few years beyond traditional content monetisation models, current solutions still favour the top minority of creators who have access to an existing audience. Making it no easier for up-and-coming artists with talent to be discovered, let alone get funded.</p>
+
+                                        <NuxtLink  class="default-btn six" to="/about-us">
+                                            <i class="bx bx-file"></i>
+                                            Read More
+                                        </NuxtLink>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="services-img">
+                                        <img src="~/assets/images/services-slider/services-3.png" alt="Image">
                                     </div>
                                 </div>
                             </div>

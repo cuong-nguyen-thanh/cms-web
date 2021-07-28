@@ -4,14 +4,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
-                        <p>Copyright @2020 Quvia. Designed <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                        <p>Copyright @2021 RepubliK.</p>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <ul class="footer-menu">
                             <li>
                                 <NuxtLink to="/privacy-policy" target="_blank">
-                                    Privacy Policy 
+                                    Privacy Policy
                                 </NuxtLink>
                             </li>
                             <li>

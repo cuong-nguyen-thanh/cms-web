@@ -7,13 +7,13 @@
                         <li>
                             <a href="tel:+44-458-895-456">
                                 <i class="bx bx-phone-call"></i>
-                                +44 458 895 456
+                                +01 234 567 890
                             </a>
                         </li>
                         <li>
                             <a href="mailto:hello@quvia.com">
                                 <i class="bx bx-envelope"></i>
-                                hello@quvia.com
+                                support@republik.com
                             </a>
                         </li>
                     </ul>
@@ -21,47 +21,47 @@
 
                 <div class="col-lg-6 col-sm-4 col-md-5">
                     <div class="header-content-right">
-                        <ul class="language-area">
-                            <li class="language-item-top">
-                                <a href="#" class="language-bar">
-                                    <span>Language</span>		
-                                    <i class="bx bx-chevron-down"></i>
-                                </a>
+<!--                        <ul class="language-area">-->
+<!--                            <li class="language-item-top">-->
+<!--                                <a href="#" class="language-bar">-->
+<!--                                    <span>Language</span>-->
+<!--                                    <i class="bx bx-chevron-down"></i>-->
+<!--                                </a>-->
 
-                                <ul class="language-item-bottom">
-                                    <li class="language-item">
-                                        <a href="#" class="language-link">
-                                            <img src="~/assets/images/language/english.png" alt="Image">
-                                            English
-                                        </a>
-                                    </li>
-                                    <li class="language-item">
-                                        <a href="#" class="language-link">
-                                            <img src="~/assets/images/language/arab.png" alt="Image">
-                                            العربيّة
-                                        </a>
-                                    </li>
-                                    <li class="language-item">
-                                        <a href="#" class="language-link">
-                                            <img src="~/assets/images/language/germany.png" alt="Image">
-                                            Deutsch
-                                        </a>
-                                    </li>
-                                    <li class="language-item">
-                                        <a href="#" class="language-link">
-                                            <img src="~/assets/images/language/portugal.png" alt="Image">
-                                            󠁥󠁮󠁧󠁿Português
-                                        </a>
-                                    </li>
-                                    <li class="language-item">
-                                        <a href="#" class="language-link">
-                                            <img src="~/assets/images/language/china.png" alt="Image">
-                                            简体中文
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+<!--                                <ul class="language-item-bottom">-->
+<!--                                    <li class="language-item">-->
+<!--                                        <a href="#" class="language-link">-->
+<!--                                            <img src="~/assets/images/language/english.png" alt="Image">-->
+<!--                                            English-->
+<!--                                        </a>-->
+<!--                                    </li>-->
+<!--                                    <li class="language-item">-->
+<!--                                        <a href="#" class="language-link">-->
+<!--                                            <img src="~/assets/images/language/arab.png" alt="Image">-->
+<!--                                            العربيّة-->
+<!--                                        </a>-->
+<!--                                    </li>-->
+<!--                                    <li class="language-item">-->
+<!--                                        <a href="#" class="language-link">-->
+<!--                                            <img src="~/assets/images/language/germany.png" alt="Image">-->
+<!--                                            Deutsch-->
+<!--                                        </a>-->
+<!--                                    </li>-->
+<!--                                    <li class="language-item">-->
+<!--                                        <a href="#" class="language-link">-->
+<!--                                            <img src="~/assets/images/language/portugal.png" alt="Image">-->
+<!--                                            󠁥󠁮󠁧󠁿Português-->
+<!--                                        </a>-->
+<!--                                    </li>-->
+<!--                                    <li class="language-item">-->
+<!--                                        <a href="#" class="language-link">-->
+<!--                                            <img src="~/assets/images/language/china.png" alt="Image">-->
+<!--                                            简体中文-->
+<!--                                        </a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                        </ul>-->
 
                         <ul class="log-in-sign-up">
                             <li>
@@ -86,3 +86,13 @@ export default {
     name: 'HederStyleTwo'
 }
 </script>
+
+<style scoped>
+.top-header-area {
+  padding: 5px 0;
+}
+.header-content-left,
+.header-content-right ul {
+  margin: 0;
+}
+</style>

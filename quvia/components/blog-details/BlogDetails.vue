@@ -22,14 +22,14 @@
 <!--                                </ul>-->
 <!--                            </div>-->
                             <h3>
-                                {{details.title}}
+                                {{details[0].title}}
                             </h3>
 
-                            <div v-if="details.img !== null" class="article-image">
-                                <img :src="details.img.url" alt="image">
+                            <div v-if="details[0].img !== null" class="article-image">
+                                <img :src="details[0].img.url" alt="image">
                             </div>
 
-                            <span v-html="details.longText"></span>
+                            <span v-html="details[0].longText"></span>
                         </div>
 
                         <div class="post-navigation">

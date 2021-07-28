@@ -4,25 +4,25 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="banner-text">
-                        <h1>Cyber Security Solutions Built on Customer Trust</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <h1>The next-generation creator platform, powered by blockchain technology</h1>
+                        <p>A scalable ecosystem, built from the ground up, to equitably distribute value by giving everyone a stake in the economy.</p>
 
                         <div class="banner-btn wow fadeInUp" data-wow-delay="1s">
                             <NuxtLink class="default-btn six" to="/pricing">
                                 <i class="bx bx-file"></i>
-                                Get a Quote
+                                Read Whitepaper
                             </NuxtLink>
-                            <NuxtLink class="default-btn active" to="/about-us">
-                                <i class="bx bx-user"></i>
-                                Discover More
-                            </NuxtLink>
+<!--                            <NuxtLink class="default-btn active" to="/about-us">-->
+<!--                                <i class="bx bx-user"></i>-->
+<!--                                Our Team-->
+<!--                            </NuxtLink>-->
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-6">
                     <div class="banner-img">
-                        <img src="~/assets/images/banner-six.png" alt="Image">
+                        <img src="~/assets/images/landing.jpg" alt="Image">
                     </div>
                 </div>
             </div>

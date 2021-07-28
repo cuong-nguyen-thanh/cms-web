@@ -1,10 +1,8 @@
 <template>
-  <div class="team-area pt-100 pb-70">
+  <div class="team-area bg-color-f9f9f9 pt-100 pb-70">
     <div class="container">
       <div class="section-title">
-        <h2>Our Expert Team</h2>
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore-->
-<!--          magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>-->
+        <h2>Advisors</h2>
       </div>
 
       <div class="row">
@@ -12,10 +10,23 @@
           <div class="single-team">
             <div class="image">
               <img src="https://via.placeholder.com/355x455" alt="image">
+            </div>
+
+            <div class="content">
+              <h3>Richmond Teo</h3>
+              <span>Lead Advisor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-team">
+            <div class="image">
+              <img src="https://via.placeholder.com/355x455" alt="image">
 
               <ul class="social">
                 <li>
-                  <a href="https://www.linkedin.com/in/david-webster-aba90219" target="_blank">
+                  <a href="https://www.linkedin.com/in/simon-j-pestridge-b6437552" target="_blank">
                     <i class="bx bxl-linkedin"></i>
                   </a>
                 </li>
@@ -23,21 +34,8 @@
             </div>
 
             <div class="content">
-              <h3>David Webster</h3>
-              <span>CEO</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6">
-          <div class="single-team">
-            <div class="image">
-              <img src="https://via.placeholder.com/355x455" alt="image">
-            </div>
-
-            <div class="content">
-              <h3>Daniel He</h3>
-              <span>CFO</span>
+              <h3>Simon Pestridge</h3>
+              <span>Advisor</span>
             </div>
           </div>
         </div>
@@ -49,7 +47,7 @@
 
               <ul class="social">
                 <li>
-                  <a href="https://www.linkedin.com/in/bendickenson" target="_blank">
+                  <a href="https://www.linkedin.com/in/tim-zhu" target="_blank">
                     <i class="bx bxl-linkedin"></i>
                   </a>
                 </li>
@@ -57,8 +55,8 @@
             </div>
 
             <div class="content">
-              <h3>Ben Dickenson</h3>
-              <span>VP Product</span>
+              <h3>Tim Zhu</h3>
+              <span>Advisor</span>
             </div>
           </div>
         </div>
@@ -67,31 +65,56 @@
           <div class="single-team">
             <div class="image">
               <img src="https://via.placeholder.com/355x455" alt="image">
-            </div>
-
-            <div class="content">
-              <h3>Felix Huang</h3>
-              <span>VP Community</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="single-team">
-            <div class="image">
-              <img src="https://via.placeholder.com/355x455" alt="image">
-
               <ul class="social">
                 <li>
-                  <a href="https://www.jonathanah.com/interviews" target="_blank">
-                    <i class="bx bxl-blogger"></i>
+                  <a href="https://www.linkedin.com/in/carlnorberg" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
                   </a>
                 </li>
               </ul>
             </div>
 
             <div class="content">
-              <h3>Jonathan Nah</h3>
-              <span>Creative Director</span>
+              <h3>Carl Norberg</h3>
+              <span>Advisor</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-team">
+            <div class="image">
+              <img src="https://via.placeholder.com/355x455" alt="image">
+            </div>
+
+            <div class="content">
+              <h3>Mari Koda</h3>
+              <span>Advisor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-team">
+            <div class="image">
+              <img src="https://via.placeholder.com/355x455" alt="image">
+            </div>
+
+            <div class="content">
+              <h3>Kantaro Charisma</h3>
+              <span>Advisor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-team">
+            <div class="image">
+              <img src="https://via.placeholder.com/355x455" alt="image">
+            </div>
+
+            <div class="content">
+              <h3>Mike Song</h3>
+              <span>Advisor</span>
             </div>
           </div>
         </div>
@@ -103,6 +126,6 @@
 <script>
 
 export default {
-  name: 'Team'
+  name: 'Advisor'
 }
 </script>

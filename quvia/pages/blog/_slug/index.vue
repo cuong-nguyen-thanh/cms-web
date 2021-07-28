@@ -35,9 +35,12 @@ export default {
   },
 
   created: async function () {
-    const {slug} = this.$route.params
+    let {slug} = this.$route.params
+    if (!slug) {
+      slug = 'problem'
+    }
     console.log(slug)
-    this.details = await this.$strapi.findOne('blogdetails', slug)
+    this.details = await this.$strapi.find('blogdetails', {slug})
   }
 }
 </script>

@@ -1,19 +1,19 @@
 <template>
-    <div>
-        <NavbarStyleThree />
-        <MainBanner />
-        <Partner />
-        <ServicesSlider />
-        <Serve />
-        <Counter />
-        <ChooseUs />
-        <Testimonials />
-        <Video />
-        <Blog />
-        <LetsTalk />
-        <FooterStyleTwo />
-        <CopyRight />
-    </div>
+  <div>
+    <NavbarStyleThree/>
+    <MainBanner/>
+    <Partner/>
+    <ServicesSlider/>
+    <Serve/>
+    <Counter/>
+    <ChooseUs/>
+    <Testimonials/>
+    <Video/>
+    <Blog/>
+    <LetsTalk/>
+    <FooterStyleTwo/>
+    <CopyRight/>
+  </div>
 </template>
 
 <script>
@@ -32,20 +32,20 @@ import FooterStyleTwo from '../layouts/FooterStyleTwo'
 import CopyRight from '../layouts/CopyRight'
 
 export default {
-    components: {
-        NavbarStyleThree,
-        MainBanner,
-        Partner,
-        ServicesSlider,
-        Serve,
-        Counter,
-        ChooseUs,
-        Testimonials,
-        Video,
-        Blog,
-        LetsTalk,
-        FooterStyleTwo,
-        CopyRight,
-    }
+  components: {
+    NavbarStyleThree,
+    MainBanner,
+    Partner,
+    ServicesSlider,
+    Serve,
+    Counter,
+    ChooseUs,
+    Testimonials,
+    Video,
+    Blog,
+    LetsTalk,
+    FooterStyleTwo,
+    CopyRight,
+  }
 }
 </script>

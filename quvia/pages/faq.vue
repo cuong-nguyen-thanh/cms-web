@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle pageTitle="FAQ" />
-        <Faq />
-        <Contact />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <PageTitle pageTitle="FAQ"/>
+    <Faq/>
+    <Contact/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -16,12 +16,12 @@ import Contact from '../components/Faq/Contact'
 import Footer from '../layouts/Footer'
 
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        Faq,
-        Contact,
-        Footer,
-    }
+  components: {
+    Navbar,
+    PageTitle,
+    Faq,
+    Contact,
+    Footer,
+  }
 }
 </script>

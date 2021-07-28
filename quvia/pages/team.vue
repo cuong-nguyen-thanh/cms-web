@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle pageTitle="Team" />
-        <Team />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <PageTitle pageTitle="Team"/>
+    <Team/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -14,11 +14,11 @@ import Team from '../components/Team/Team'
 import Footer from '../layouts/Footer'
 
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        Team,
-        Footer,
-    }
+  components: {
+    Navbar,
+    PageTitle,
+    Team,
+    Footer,
+  }
 }
 </script>

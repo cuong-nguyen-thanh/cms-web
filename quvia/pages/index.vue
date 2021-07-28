@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Navbar />
-    <MainBanner />
-    <Performance />
-    <Transform />
-    <Pricing />
-    <Choose />
-    <Team />
-    <Solutions />
-    <Graph />
-    <Faq />
-    <BlogStyleTwo />
-    <Footer />
+    <Navbar/>
+    <MainBanner/>
+    <Performance/>
+    <Transform/>
+    <Pricing/>
+    <Choose/>
+    <Team/>
+    <Solutions/>
+    <Graph/>
+    <Faq/>
+    <BlogStyleTwo/>
+    <Footer/>
   </div>
 </template>
 

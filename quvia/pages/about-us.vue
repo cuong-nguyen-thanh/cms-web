@@ -1,15 +1,15 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle pageTitle="About" />
-        <Cybersecurity />
-        <Complete />
-        <Electronic />
-        <Approach />
-        <Client />
-        <Partner />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <PageTitle pageTitle="About"/>
+    <Cybersecurity/>
+    <Complete/>
+    <Electronic/>
+    <Approach/>
+    <Client/>
+    <Partner/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -24,16 +24,16 @@ import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
 
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        Cybersecurity,
-        Complete,
-        Electronic,
-        Approach,
-        Client,
-        Partner,
-        Footer,
-    }
+  components: {
+    Navbar,
+    PageTitle,
+    Cybersecurity,
+    Complete,
+    Electronic,
+    Approach,
+    Client,
+    Partner,
+    Footer,
+  }
 }
 </script>

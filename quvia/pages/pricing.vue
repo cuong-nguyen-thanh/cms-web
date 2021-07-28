@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle pageTitle="Pricing" />
-        <PricingTwo />
-        <Pricing />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <PageTitle pageTitle="Pricing"/>
+    <PricingTwo/>
+    <Pricing/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -16,12 +16,12 @@ import Pricing from '../components/Common/Pricing'
 import Footer from '../layouts/Footer'
 
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        PricingTwo,
-        Pricing,
-        Footer,
-    }
+  components: {
+    Navbar,
+    PageTitle,
+    PricingTwo,
+    Pricing,
+    Footer,
+  }
 }
 </script>

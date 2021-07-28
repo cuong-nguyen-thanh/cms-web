@@ -1,20 +1,20 @@
 <template>
-    <div>
-        <Navbar />
-        <MainBanner />
-        <Partner />
-        <Cybersecurity />
-        <Security />
-        <Solutions />
-        <Complete />
-        <Manual />
-        <Counter />
-        <Pricing />
-        <Client />
-        <Blog />
-        <FooterTop />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <MainBanner/>
+    <Partner/>
+    <Cybersecurity/>
+    <Security/>
+    <Solutions/>
+    <Complete/>
+    <Manual/>
+    <Counter/>
+    <Pricing/>
+    <Client/>
+    <Blog/>
+    <FooterTop/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -33,20 +33,20 @@ import Blog from '../components/Common/Blog'
 import Footer from '../layouts/Footer'
 
 export default {
-    components: {
-        Navbar,
-        MainBanner,
-        Partner,
-        Cybersecurity,
-        Security,
-        Solutions,
-        Complete,
-        Manual,
-        Counter,
-        Pricing,
-        Client,
-        Blog,
-        Footer,
-    }
+  components: {
+    Navbar,
+    MainBanner,
+    Partner,
+    Cybersecurity,
+    Security,
+    Solutions,
+    Complete,
+    Manual,
+    Counter,
+    Pricing,
+    Client,
+    Blog,
+    Footer,
+  }
 }
 </script>

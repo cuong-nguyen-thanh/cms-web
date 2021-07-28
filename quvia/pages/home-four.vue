@@ -1,18 +1,18 @@
 <template>
-    <div>
-        <Navbar />
-        <MainBanner />
-        <Performance />
-        <Transform />
-        <Pricing />
-        <Choose />
-        <Team />
-        <Solutions />
-        <Graph />
-        <Faq />
-        <BlogStyleTwo />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <MainBanner/>
+    <Performance/>
+    <Transform/>
+    <Pricing/>
+    <Choose/>
+    <Team/>
+    <Solutions/>
+    <Graph/>
+    <Faq/>
+    <BlogStyleTwo/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -32,20 +32,20 @@ import Footer from '../layouts/Footer'
 import NavbarStyleTwo from "../layouts/NavbarStyleTwo";
 
 export default {
-    components: {
-        Navbar,
-        MainBanner,
-        Partner,
-        Performance,
-        Transform,
-        Pricing,
-        Choose,
-        Team,
-        Solutions,
-        Graph,
-        Faq,
-        BlogStyleTwo,
-        Footer,
-    }
+  components: {
+    Navbar,
+    MainBanner,
+    Partner,
+    Performance,
+    Transform,
+    Pricing,
+    Choose,
+    Team,
+    Solutions,
+    Graph,
+    Faq,
+    BlogStyleTwo,
+    Footer,
+  }
 }
 </script>

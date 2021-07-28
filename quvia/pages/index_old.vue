@@ -1,18 +1,18 @@
 <template>
-    <div>
-        <NavbarStyleTwo />
-        <MainBanner />
-        <Partner />
-        <Security />
-        <Approach />
-        <Solutions />
-        <Electronic />
-        <Complete />
-        <Client />
-        <Cybersecurity />
-        <Blog />
-        <Footer />
-    </div>
+  <div>
+    <NavbarStyleTwo/>
+    <MainBanner/>
+    <Partner/>
+    <Security/>
+    <Approach/>
+    <Solutions/>
+    <Electronic/>
+    <Complete/>
+    <Client/>
+    <Cybersecurity/>
+    <Blog/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -31,19 +31,19 @@ import Footer from '../layouts/Footer'
 import NavbarStyleTwo from "../layouts/NavbarStyleTwo";
 
 export default {
-    components: {
-      NavbarStyleTwo,
-        MainBanner,
-        Partner,
-        Security,
-        Approach,
-        Solutions,
-        Electronic,
-        Complete,
-        Client,
-        Cybersecurity,
-        Blog,
-        Footer,
-    }
+  components: {
+    NavbarStyleTwo,
+    MainBanner,
+    Partner,
+    Security,
+    Approach,
+    Solutions,
+    Electronic,
+    Complete,
+    Client,
+    Cybersecurity,
+    Blog,
+    Footer,
+  }
 }
 </script>

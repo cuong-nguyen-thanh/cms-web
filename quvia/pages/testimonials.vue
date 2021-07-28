@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle pageTitle="Testimonials" />
-        <Client />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <PageTitle pageTitle="Testimonials"/>
+    <Client/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -14,11 +14,11 @@ import Client from '../components/Testimonials/Client'
 import Footer from '../layouts/Footer'
 
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        Client,
-        Footer,
-    }
+  components: {
+    Navbar,
+    PageTitle,
+    Client,
+    Footer,
+  }
 }
 </script>

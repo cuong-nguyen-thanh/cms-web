@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle pageTitle="Services Style Three" />
-        <Approach />
-        <Complete />
-        <Cybersecurity />
-        <Solutions />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <PageTitle pageTitle="Services Style Three"/>
+    <Approach/>
+    <Complete/>
+    <Cybersecurity/>
+    <Solutions/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -18,16 +18,16 @@ import Complete from '../components/services-three/Complete'
 import Cybersecurity from '../components/services-three/Cybersecurity'
 import Solutions from '../components/services-three/Solutions'
 import Footer from '../layouts/Footer'
- 
+
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        Approach,
-        Complete,
-        Cybersecurity,
-        Solutions,
-        Footer,
-    }
+  components: {
+    Navbar,
+    PageTitle,
+    Approach,
+    Complete,
+    Cybersecurity,
+    Solutions,
+    Footer,
+  }
 }
 </script>

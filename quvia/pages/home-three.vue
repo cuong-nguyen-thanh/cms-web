@@ -1,19 +1,19 @@
 <template>
-    <div>
-        <NavbarStyleTwo />
-        <MainBanner />
-        <Features />
-        <Security />
-        <Transform />
-        <Performance />
-        <Team />
-        <ManualArea />
-        <Faq />
-        <Choose />
-        <Cybersecurity />
-        <BlogStyleTwo />
-        <Footer />
-    </div>
+  <div>
+    <NavbarStyleTwo/>
+    <MainBanner/>
+    <Features/>
+    <Security/>
+    <Transform/>
+    <Performance/>
+    <Team/>
+    <ManualArea/>
+    <Faq/>
+    <Choose/>
+    <Cybersecurity/>
+    <BlogStyleTwo/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -32,20 +32,20 @@ import BlogStyleTwo from '../components/Common/BlogStyleTwo'
 import Footer from '../layouts/Footer'
 
 export default {
-    components: {
-        NavbarStyleTwo,
-        MainBanner,
-        Features,
-        Security,
-        Transform,
-        Performance,
-        Team,
-        ManualArea,
-        Faq,
-        Choose,
-        Cybersecurity,
-        BlogStyleTwo,
-        Footer,
-    }
+  components: {
+    NavbarStyleTwo,
+    MainBanner,
+    Features,
+    Security,
+    Transform,
+    Performance,
+    Team,
+    ManualArea,
+    Faq,
+    Choose,
+    Cybersecurity,
+    BlogStyleTwo,
+    Footer,
+  }
 }
 </script>

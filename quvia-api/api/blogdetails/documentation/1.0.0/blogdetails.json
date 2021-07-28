@@ -520,7 +520,6 @@
           "date",
           "name",
           "title",
-          "img",
           "longText"
         ],
         "properties": {

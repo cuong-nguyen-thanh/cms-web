@@ -25,7 +25,7 @@
                                 {{details.title}}
                             </h3>
 
-                            <div class="article-image">
+                            <div v-if="details.img !== null" class="article-image">
                                 <img :src="details.img.url" alt="image">
                             </div>
 

@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle pageTitle="Blog Left Sidebar" />
-        <BlogLeftSidebar />
-        <Footer />
-    </div>
+  <div>
+    <Navbar/>
+    <PageTitle pageTitle="Blog Left Sidebar"/>
+    <BlogLeftSidebar/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -12,13 +12,13 @@ import Navbar from '../layouts/Navbar'
 import PageTitle from '../components/Common/PageTitle'
 import BlogLeftSidebar from '../components/blog-left-sidebar/BlogLeftSidebar'
 import Footer from '../layouts/Footer'
- 
+
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        BlogLeftSidebar,
-        Footer,
-    }
+  components: {
+    Navbar,
+    PageTitle,
+    BlogLeftSidebar,
+    Footer,
+  }
 }
 </script>

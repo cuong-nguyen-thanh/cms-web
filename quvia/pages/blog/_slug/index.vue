@@ -1,17 +1,17 @@
 <template>
-    <div>
-        <Navbar />
-        <PageTitle
-            v-if="details !== null"
-            :pageTitle="details.title"
-        />
-        <div v-if="details !== null">
-            <BlogDetails
-                v-bind:detailsContent="details"
-            />
-        </div>
-        <Footer />
+  <div>
+    <Navbar/>
+    <PageTitle
+      v-if="details !== null"
+      :pageTitle="details.title"
+    />
+    <div v-if="details !== null">
+      <BlogDetails
+        v-bind:detailsContent="details"
+      />
     </div>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -21,23 +21,23 @@ import BlogDetails from '../../../components/blog-details/BlogDetails'
 import Footer from '../../../layouts/Footer'
 
 export default {
-    components: {
-        Navbar,
-        PageTitle,
-        BlogDetails,
-        Footer,
-    },
+  components: {
+    Navbar,
+    PageTitle,
+    BlogDetails,
+    Footer,
+  },
 
-    data(){
-        return{
-            details: null
-        }
-    },
-
-    created: async function(){
-        const { slug } = this.$route.params
-        console.log(slug)
-        this.details = await this.$strapi.findOne('blogdetails', slug)
+  data() {
+    return {
+      details: null
     }
+  },
+
+  created: async function () {
+    const {slug} = this.$route.params
+    console.log(slug)
+    this.details = await this.$strapi.findOne('blogdetails', slug)
+  }
 }
 </script>

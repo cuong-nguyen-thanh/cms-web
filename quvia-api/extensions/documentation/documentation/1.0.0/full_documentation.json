@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/27/2021 10:11:09 PM"
+    "x-generation-date": "07/29/2021 10:12:33 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -12302,6 +12302,9 @@
                 "shortDesc": {
                   "type": "string",
                   "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  suspendisse ultrices"
+                },
+                "slug": {
+                  "type": "string"
                 }
               }
             }
@@ -12351,6 +12354,9 @@
                 "shortDesc": {
                   "type": "string",
                   "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  suspendisse ultrices"
+                },
+                "slug": {
+                  "type": "string"
                 }
               }
             }
@@ -12594,93 +12600,22 @@
       "Blogdetails": {
         "required": [
           "id",
-          "date",
-          "name",
+          "group",
           "title",
-          "longText"
+          "longText",
+          "groupOrder"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "date": {
+          "group": {
             "type": "string",
-            "default": "May 19, 2021"
-          },
-          "name": {
-            "type": "string",
-            "default": "John Anderson"
+            "default": "RepubliK"
           },
           "title": {
             "type": "string",
             "default": "DHS Issues Emergency Directive To Prevent Hacking Attack"
-          },
-          "img": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "longText": {
             "type": "string",
@@ -12688,6 +12623,10 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "groupOrder": {
+            "type": "integer",
+            "default": 1
           },
           "published_at": {
             "type": "string",
@@ -12697,19 +12636,15 @@
       },
       "NewBlogdetails": {
         "required": [
-          "date",
-          "name",
+          "group",
           "title",
-          "longText"
+          "longText",
+          "groupOrder"
         ],
         "properties": {
-          "date": {
+          "group": {
             "type": "string",
-            "default": "May 19, 2021"
-          },
-          "name": {
-            "type": "string",
-            "default": "John Anderson"
+            "default": "RepubliK"
           },
           "title": {
             "type": "string",
@@ -12721,6 +12656,10 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "groupOrder": {
+            "type": "integer",
+            "default": 1
           },
           "published_at": {
             "type": "string",

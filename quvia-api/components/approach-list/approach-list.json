@@ -2,7 +2,8 @@
   "collectionName": "components_approach_list_approach_lists",
   "info": {
     "name": "Approach-List",
-    "icon": "arrow-alt-circle-right"
+    "icon": "arrow-alt-circle-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,6 +21,9 @@
       "type": "string",
       "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  suspendisse ultrices",
       "required": true
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

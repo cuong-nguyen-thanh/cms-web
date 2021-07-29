@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="copy-right-area">
+        <div class="copy-right-area bg-color-f9f9f9">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">

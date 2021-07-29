@@ -5,15 +5,15 @@
                 <div class="col-lg-6 col-sm-8 col-md-7">
                     <ul class="header-content-left">
                         <li>
-                            <a href="tel:+44-458-895-456">
-                                <i class="bx bx-phone-call"></i>
-                                +01 234 567 890
+                            <a href="https://t.me/joinchat/9bND3ZH32pgzMTVl" target="_blank">
+                                <i class="bx bxl-telegram"></i>
+                                RepubliK Official Group
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:hello@quvia.com">
+                            <a href="mailto:hello@republik.io">
                                 <i class="bx bx-envelope"></i>
-                                support@republik.com
+                                hello@republik.io
                             </a>
                         </li>
                     </ul>
@@ -91,7 +91,10 @@ export default {
 .top-header-area {
   padding: 5px 0;
 }
-.header-content-left,
+.header-content-left {
+    padding: 0;
+    margin: 0;
+}
 .header-content-right ul {
   margin: 0;
 }

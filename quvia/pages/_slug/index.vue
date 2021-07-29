@@ -36,7 +36,7 @@ export default {
   },
 
   created: async function () {
-    const {slug} = this.$route.params
+    const {slug} = this.$route.params;
     this.details = await this.$strapi.find('servicesdetails', `slug=${slug}`)
   }
 }

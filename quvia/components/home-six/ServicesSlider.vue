@@ -30,7 +30,7 @@
 
                                         <p>RepubliK will be the creative commons built from the ground up to equitably distribute value by giving everyone a stake in the economy. </p>
 
-                                        <NuxtLink  class="default-btn six" to="/about-us">
+                                        <NuxtLink  class="default-btn six" to="/whitepaper/problem">
                                             <i class="bx bx-file"></i>
                                             Read More
                                         </NuxtLink>
@@ -54,7 +54,7 @@
                                         <p>Even more significantly though, 93% are amateurs struggling to make a living out of their passion.</p>
                                         <p>While the current funding ecosystem for creative and artistic talent has evolved in the last few years beyond traditional content monetisation models, current solutions still favour the top minority of creators who have access to an existing audience. Making it no easier for up-and-coming artists with talent to be discovered, let alone get funded.</p>
 
-                                        <NuxtLink  class="default-btn six" to="/about-us">
+                                        <NuxtLink  class="default-btn six" to="/whitepaper/opportunity">
                                             <i class="bx bx-file"></i>
                                             Read More
                                         </NuxtLink>

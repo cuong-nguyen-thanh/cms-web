@@ -6,11 +6,14 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
+    "start:prod": "cross-env NODE_ENV=production npm start",
     "build": "strapi build",
+    "build:prod": "cross-env NODE_ENV=production npm run build",
     "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
+    "cross-env": "^7.0.3",
     "knex": "0.21.18",
     "pg": "8.5.1",
     "strapi": "3.5.4",

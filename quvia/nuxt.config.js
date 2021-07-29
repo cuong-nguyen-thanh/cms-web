@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Quvia - Nuxt.js Cyber Security Company Template',
+    title: 'Republik',
     htmlAttrs: {
       lang: 'en'
     },
@@ -60,6 +60,7 @@ export default {
     runtime: true, // Support `$md()`
   },
   strapi: {
+    url: 'http://localhost:1338',
     entities: [
       {name: 'sitelogo', type: 'single'},
       {name: 'bannerdefaulthomepage', type: 'single'},
@@ -87,5 +88,9 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  server: {
+    host: '0.0.0.0',
+    port: 80
+  },
 }

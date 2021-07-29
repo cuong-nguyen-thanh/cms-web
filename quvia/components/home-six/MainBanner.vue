@@ -8,7 +8,7 @@
                         <p>A scalable ecosystem, built from the ground up, to equitably distribute value by giving everyone a stake in the economy.</p>
 
                         <div class="banner-btn wow fadeInUp" data-wow-delay="1s">
-                            <NuxtLink class="default-btn six" to="/pricing">
+                            <NuxtLink class="default-btn six" to="/whitepaper/problem">
                                 <i class="bx bx-file"></i>
                                 Read Whitepaper
                             </NuxtLink>

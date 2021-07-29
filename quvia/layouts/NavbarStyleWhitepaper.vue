@@ -69,7 +69,7 @@
                             </NuxtLink>
                           </li>
                           <li class="nav-item">
-                              <NuxtLink to="/whitepaper/the-rad-token" class="nav-link">
+                            <NuxtLink to="/whitepaper/the-rad-token" class="nav-link">
                               The RAD Token
                             </NuxtLink>
                           </li>
@@ -131,24 +131,6 @@
                     </ul>
                   </li>
                 </ul>
-
-
-<!--                <div class="others-option">-->
-<!--                  <div class="cart-icon">-->
-<!--                    <NuxtLink to="/cart" class="cart">-->
-<!--                      <i class="bx bx-shopping-bag"></i>-->
-<!--                      <span>3</span>-->
-<!--                    </NuxtLink>-->
-<!--                  </div>-->
-
-<!--                  <div class="sidebar-menu">-->
-<!--                    <div class="burger-menu" v-b-modal.modal-1>-->
-<!--                      <i class="bx bx-menu-alt-left"></i>-->
-<!--                    </div>-->
-<!--                  </div>-->
-
-<!--                  <SidebarModal/>-->
-<!--                </div>-->
               </b-collapse>
             </div>
           </nav>
@@ -171,21 +153,21 @@ export default {
 
   data() {
     return {
-      isSticky: false,
+      isSticky: true,
       logo: null
     }
   },
 
   mounted() {
     const that = this
-    window.addEventListener('scroll', () => {
-      let scrollPos = window.scrollY
-      if (scrollPos >= 100) {
-        that.isSticky = true
-      } else {
-        that.isSticky = false
-      }
-    })
+    // window.addEventListener('scroll', () => {
+    //   let scrollPos = window.scrollY
+    //   if (scrollPos >= 100) {
+    //     that.isSticky = true
+    //   } else {
+    //     that.isSticky = false
+    //   }
+    // })
   },
 
   created: async function () {

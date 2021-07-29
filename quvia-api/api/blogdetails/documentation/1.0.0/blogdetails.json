@@ -517,93 +517,22 @@
       "Blogdetails": {
         "required": [
           "id",
-          "date",
-          "name",
+          "group",
           "title",
-          "longText"
+          "longText",
+          "groupOrder"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "date": {
+          "group": {
             "type": "string",
-            "default": "May 19, 2021"
-          },
-          "name": {
-            "type": "string",
-            "default": "John Anderson"
+            "default": "RepubliK"
           },
           "title": {
             "type": "string",
             "default": "DHS Issues Emergency Directive To Prevent Hacking Attack"
-          },
-          "img": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "longText": {
             "type": "string",
@@ -611,6 +540,10 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "groupOrder": {
+            "type": "integer",
+            "default": 1
           },
           "published_at": {
             "type": "string",
@@ -620,19 +553,15 @@
       },
       "NewBlogdetails": {
         "required": [
-          "date",
-          "name",
+          "group",
           "title",
-          "longText"
+          "longText",
+          "groupOrder"
         ],
         "properties": {
-          "date": {
+          "group": {
             "type": "string",
-            "default": "May 19, 2021"
-          },
-          "name": {
-            "type": "string",
-            "default": "John Anderson"
+            "default": "RepubliK"
           },
           "title": {
             "type": "string",
@@ -644,6 +573,10 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "groupOrder": {
+            "type": "integer",
+            "default": 1
           },
           "published_at": {
             "type": "string",

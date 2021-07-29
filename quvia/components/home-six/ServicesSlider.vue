@@ -9,6 +9,7 @@
 
             <div class="services-slider-content">
                 <div class="services-slider owl-theme owl-carousel">
+                  <client-only>
                     <carousel
                         :autplay = "true"
                         :loop = "true"
@@ -69,6 +70,7 @@
                             </div>
                         </slide>
                     </carousel>
+                    </client-only>
                 </div>
             </div>
         </div>

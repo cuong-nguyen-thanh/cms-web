@@ -60,7 +60,7 @@ export default {
     runtime: true, // Support `$md()`
   },
   strapi: {
-    url: 'http://localhost:1338',
+    url: 'http://47.241.111.147:1337',
     entities: [
       {name: 'sitelogo', type: 'single'},
       {name: 'bannerdefaulthomepage', type: 'single'},
@@ -88,9 +88,15 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    loaders:  {
+      vue: {
+        prettify: false
+      }
+    },
+  },
   server: {
     host: '0.0.0.0',
-    port: 80
+    port: 3000
   },
 }

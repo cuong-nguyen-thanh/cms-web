@@ -1,6 +1,7 @@
 <template>
   <div>
     <footer class="footer-top-area pt-100 pb-70">
+      <client-only>
       <div class="container">
         <div
           class="row"
@@ -93,6 +94,7 @@
           </div>
         </div>
       </div>
+      </client-only>
     </footer>
 
     <footer class="footer-bottom-area">
@@ -125,13 +127,14 @@
         </div>
       </div>
     </footer>
-
+    <client-only>
     <back-to-top bottom="50px" right="50px">
       <div class="go-top">
         <i class='bx bx-chevrons-up'></i>
         <i class='bx bx-chevrons-up'></i>
       </div>
     </back-to-top>
+    </client-only>
   </div>
 </template>
 

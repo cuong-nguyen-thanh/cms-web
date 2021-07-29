@@ -66,11 +66,11 @@
                         <ul class="log-in-sign-up">
                             <li>
                                 <i class="bx bx-log-in"></i>
-                                <NuxtLink to="/log-in">Log In</NuxtLink>
+                                <NuxtLink to="/">Log In</NuxtLink>
                             </li>
                             <li>
                                 <i class="bx bx-user"></i>
-                                <NuxtLink to="/sign-in">Sign Up</NuxtLink>
+                                <NuxtLink to="/">Sign Up</NuxtLink>
                             </li>
                         </ul>
                     </div>

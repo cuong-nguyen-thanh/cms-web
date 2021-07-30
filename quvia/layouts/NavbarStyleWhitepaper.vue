@@ -20,14 +20,6 @@
 
                 <b-collapse class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" is-nav>
                   <ul class="navbar-nav m-auto">
-<!--                    <li class="nav-item">-->
-<!--                      <NuxtLink to="/#" class="nav-link">-->
-<!--                        Home-->
-<!--                        <i class='bx bx-chevron-right'></i>-->
-<!--                      </NuxtLink>-->
-
-<!--                    </li>-->
-
                     <li class="nav-item">
                       <NuxtLink to="/whitepaper/problem" class="nav-link">
                         Whitepaper
@@ -129,6 +121,11 @@
                     </li>
                   </ul>
                 </b-collapse>
+
+                <div class="search-form search-form-small">
+                  <input type="search" class="search-field" placeholder="Get Updates...">
+                  <i class='bx bx-mail-send'></i>
+                </div>
               </client-only>
             </div>
           </nav>

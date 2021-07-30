@@ -3832,7 +3832,11 @@ Banner Area Style
     .default-btn {
       //border: 1px solid $main-color;
       color: $body-color;
-      font-weight: 600;
+      font-weight: 500;
+      height: 50px;
+      overflow: inherit;
+      line-height: 1.2;
+      margin-bottom: 15px;
 
       &:hover {
         color: $white-color;
@@ -8569,5 +8573,70 @@ Page-navigation Area Style*/
   a {
     color: $main-color !important;
     font-weight: 500 !important;
+  }
+}
+
+.search-form {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  label {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .screen-reader-text {
+    display: none;
+  }
+
+  .search-field {
+    background-color: transparent;
+    height: 50px;
+    padding: 6px 15px 6px 50px;
+    border: 1px solid $main-color;
+    width: 100%;
+    display: block;
+    outline: 0;
+    transition: 0.5s;
+    font-weight: 500;
+
+    &:focus {
+      border-color: $main-color;
+    }
+  }
+
+  i {
+    position: absolute;
+    left: 1px;
+    outline: 0;
+    bottom: 1px;
+    height: 48px;
+    width: 48px;
+    border: none;
+    color: $main-color;
+    background-color: $white-color;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 5px;
+
+  }
+}
+
+.search-form-small {
+  width: 250px;
+
+  .search-field {
+    height: 36px;
+    padding: 6px 15px 6px 44px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  i {
+    width: 34px;
+    height: 34px;
+    padding: 3px 5px;
+    font-size: 28px;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <header class="header-area-six fixed-top">
-    <HederStyleTwo/>
+<!--    <HederStyleTwo/>-->
 
     <div class="nav-area-six">
       <div :class="['navbar-area', {'is-sticky': isSticky}]">
@@ -129,7 +129,6 @@
                     </li>
                   </ul>
 
-
                   <!--                <div class="others-option">-->
                   <!--                  <div class="cart-icon">-->
                   <!--                    <NuxtLink to="/cart" class="cart">-->
@@ -147,6 +146,10 @@
                   <!--                  <SidebarModal/>-->
                   <!--                </div>-->
                 </b-collapse>
+                <div class="search-form search-form-small">
+                  <input type="search" class="search-field" placeholder="Get Updates...">
+                  <i class='bx bx-mail-send'></i>
+                </div>
               </client-only>
             </div>
           </nav>

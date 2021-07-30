@@ -118,6 +118,7 @@
   .default-btn {
     padding: 12px 20px;
     font-size: 15px;
+    line-height: 2 !important;
   }
   .video-btn {
     width: 60px;
@@ -1356,6 +1357,7 @@
     &.six {
       padding: 12px 20px;
       font-size: 14px;
+      line-height: 2 !important;
     }
 
     &.active {
@@ -1587,6 +1589,7 @@
   .banner-area-six {
     .default-btn {
       padding: 12px 15px;
+      line-height: 2 !important;
 
       &.active {
         margin-left: 10px;
@@ -1802,6 +1805,7 @@
   .default-btn {
     padding: 12px 20px;
     font-size: 15px;
+    line-height: 2 !important;
   }
   .video-btn {
     width: 60px;
@@ -2407,6 +2411,7 @@
     &.six {
       padding: 12px 20px;
       font-size: 14px;
+      line-height: 2 !important;
     }
 
     &.active {
@@ -2633,6 +2638,9 @@
     display: none;
   }
   .header-area-six {
+    .search-form {
+      display: none;
+    }
     .top-header-area {
       .header-content-left {
         display: none;
@@ -2812,9 +2820,6 @@
 
 /* Min width 992px to Max width 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  #navbarSupportedContent {
-    margin-right: 200px;
-  }
   .single-features {
     padding: 20px;
   }
@@ -2984,8 +2989,14 @@
     padding-bottom: 120px;
 
     .banner-text {
+      span {
+        font-size: 14px;
+      }
       h1 {
-        font-size: 50px;
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
       }
     }
   }
@@ -3114,9 +3125,6 @@
 
 /* Continuer Custom Width Area Style */
 @media only screen and (min-width: 1200px) {
-  #navbarSupportedContent {
-    margin-right: 200px;
-  }
   .home-six {
     .container {
       max-width: 1260px;

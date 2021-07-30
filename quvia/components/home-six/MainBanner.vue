@@ -2,7 +2,7 @@
     <div class="banner-area-six">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="banner-text">
                         <span>WELCOME TO REPUBLIK</span>
                         <h1>The next-generation creator platform, powered by blockchain technology</h1>
@@ -10,9 +10,13 @@
 
                         <div class="banner-btn wow fadeInUp" data-wow-delay="1s">
                             <NuxtLink class="default-btn six" to="/whitepaper/problem">
-                                <i class="bx bx-file"></i>
+<!--                                <i class="bx bx-file"></i>-->
                                 Read Whitepaper
                             </NuxtLink>
+                            <div class="search-form">
+                                <input type="search" class="search-field" placeholder="Get Updates...">
+                                <i class='bx bx-mail-send'></i>
+                            </div>
 <!--                            <NuxtLink class="default-btn active" to="/about-us">-->
 <!--                                <i class="bx bx-user"></i>-->
 <!--                                Our Team-->
@@ -21,7 +25,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="banner-img">
                         <img src="~/assets/images/landing.jpg" alt="Image">
                     </div>

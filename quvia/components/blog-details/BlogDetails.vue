@@ -54,7 +54,7 @@
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <BlogSidebar :blogs="blogs" :groups="groups" :slug="details.slug"/>
+          <BlogSidebar :blogs="blogs" :groups="groups" :item="details"/>
         </div>
       </div>
     </div>

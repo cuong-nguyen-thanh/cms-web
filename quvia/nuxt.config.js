@@ -14,21 +14,22 @@ export default {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'},
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap',
-        href: 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap',
+        // href: 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap',
+        // href: 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'
       }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/css/animate.css',
-    '~/assets/css/bootstrap.min.css',
-    '~/assets/css/boxicons.min.css',
-    '~/assets/css/flaticon.css',
-    '~/assets/css/meanmenu.css',
-    '~/assets/css/style.css',
-    '~/assets/css/responsive.css'
+    '~/assets/css/animate',
+    '~/assets/css/bootstrap.min',
+    '~/assets/css/boxicons.min',
+    '~/assets/css/flaticon',
+    '~/assets/css/meanmenu',
+    '~/assets/css/style',
+    '~/assets/css/responsive'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -61,6 +62,7 @@ export default {
   },
   strapi: {
     url: 'http://47.241.111.147:1337',
+    // url: 'http://localhost:1338',
     entities: [
       {name: 'sitelogo', type: 'single'},
       {name: 'bannerdefaulthomepage', type: 'single'},

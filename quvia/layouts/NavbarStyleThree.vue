@@ -7,14 +7,11 @@
         <div class="main-nav">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <NuxtLink
-                  v-if="logo !== null"
-                  class="navbar-brand"
-                  to="/"
-                >
-                  <img :src="logo.img.url" alt="image">
-                </NuxtLink>
               <client-only>
+                <NuxtLink class="navbar-brand" to="/">
+                  <img src="~/assets/images/republik-logo.png" alt="image">
+                </NuxtLink>
+
                 <b-navbar-toggle target="navbarSupportedContent">
                   <span class="icon-bar top-bar"></span>
                   <span class="icon-bar middle-bar"></span>
@@ -34,7 +31,6 @@
                     <li class="nav-item">
                       <NuxtLink to="/whitepaper/problem" class="nav-link">
                         Whitepaper
-                        <i class='bx bx-chevron-right'></i>
                       </NuxtLink>
                       <ul class="dropdown-menu">
                         <li class="nav-item">
@@ -69,7 +65,7 @@
                               </NuxtLink>
                             </li>
                             <li class="nav-item">
-                                <NuxtLink to="/whitepaper/the-rad-token" class="nav-link">
+                              <NuxtLink to="/whitepaper/the-rad-token" class="nav-link">
                                 The RAD Token
                               </NuxtLink>
                             </li>
@@ -110,46 +106,47 @@
                             </li>
                           </ul>
                         </li>
-                      </ul>
-                    </li>
 
-                    <li class="nav-item">
-                      <NuxtLink to="/team" class="nav-link">
-                        Team
-                      </NuxtLink>
-                      <ul class="dropdown-menu">
                         <li class="nav-item">
-                          <NuxtLink to="/whitepaper/core-team" class="nav-link">
-                            Core Team
+                          <NuxtLink to="/team" class="nav-link">
+                            Team
+                            <i class='bx bx-chevron-right'></i>
                           </NuxtLink>
-                        </li>
-                        <li class="nav-item">
-                          <NuxtLink to="/whitepaper/advisors" class="nav-link">
-                            Advisors
-                          </NuxtLink>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/core-team" class="nav-link">
+                                Core Team
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/advisors" class="nav-link">
+                                Advisors
+                              </NuxtLink>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
                     </li>
                   </ul>
 
 
-<!--                <div class="others-option">-->
-<!--                  <div class="cart-icon">-->
-<!--                    <NuxtLink to="/cart" class="cart">-->
-<!--                      <i class="bx bx-shopping-bag"></i>-->
-<!--                      <span>3</span>-->
-<!--                    </NuxtLink>-->
-<!--                  </div>-->
+                  <!--                <div class="others-option">-->
+                  <!--                  <div class="cart-icon">-->
+                  <!--                    <NuxtLink to="/cart" class="cart">-->
+                  <!--                      <i class="bx bx-shopping-bag"></i>-->
+                  <!--                      <span>3</span>-->
+                  <!--                    </NuxtLink>-->
+                  <!--                  </div>-->
 
-<!--                  <div class="sidebar-menu">-->
-<!--                    <div class="burger-menu" v-b-modal.modal-1>-->
-<!--                      <i class="bx bx-menu-alt-left"></i>-->
-<!--                    </div>-->
-<!--                  </div>-->
+                  <!--                  <div class="sidebar-menu">-->
+                  <!--                    <div class="burger-menu" v-b-modal.modal-1>-->
+                  <!--                      <i class="bx bx-menu-alt-left"></i>-->
+                  <!--                    </div>-->
+                  <!--                  </div>-->
 
-<!--                  <SidebarModal/>-->
-<!--                </div>-->
-              </b-collapse>
+                  <!--                  <SidebarModal/>-->
+                  <!--                </div>-->
+                </b-collapse>
               </client-only>
             </div>
           </nav>
@@ -190,7 +187,7 @@ export default {
   },
 
   created: async function () {
-    this.logo = await this.$strapi.find('sitelogo')
+    // this.logo = await this.$strapi.find('sitelogo')
   }
 }
 </script>

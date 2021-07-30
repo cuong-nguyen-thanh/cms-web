@@ -2,7 +2,7 @@
     <div class="top-header-area">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-sm-8 col-md-7">
+                <div class="col-lg-6 col-md-12">
                     <ul class="header-content-left">
                         <li>
                             <a href="https://t.me/joinchat/9bND3ZH32pgzMTVl" target="_blank">
@@ -10,16 +10,16 @@
                                 RepubliK Official Group
                             </a>
                         </li>
-                        <li>
-                            <a href="mailto:hello@republik.io">
-                                <i class="bx bx-envelope"></i>
-                                hello@republik.io
-                            </a>
-                        </li>
+<!--                        <li>-->
+<!--                            <a href="mailto:hello@republik.io">-->
+<!--                                <i class="bx bx-envelope"></i>-->
+<!--                                hello@republik.io-->
+<!--                            </a>-->
+<!--                        </li>-->
                     </ul>
                 </div>
 
-                <div class="col-lg-6 col-sm-4 col-md-5">
+                <div class="col-lg-6 col-md-12">
                     <div class="header-content-right">
 <!--                        <ul class="language-area">-->
 <!--                            <li class="language-item-top">-->

@@ -2629,6 +2629,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  #secondary {
+    display: none;
+  }
   .header-area-six {
     .top-header-area {
       .header-content-left {

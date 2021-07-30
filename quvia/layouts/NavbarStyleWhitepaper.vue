@@ -20,13 +20,13 @@
 
                 <b-collapse class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" is-nav>
                   <ul class="navbar-nav m-auto">
-                    <li class="nav-item">
-                      <NuxtLink to="/#" class="nav-link">
-                        Home
-                        <i class='bx bx-chevron-right'></i>
-                      </NuxtLink>
+<!--                    <li class="nav-item">-->
+<!--                      <NuxtLink to="/#" class="nav-link">-->
+<!--                        Home-->
+<!--                        <i class='bx bx-chevron-right'></i>-->
+<!--                      </NuxtLink>-->
 
-                    </li>
+<!--                    </li>-->
 
                     <li class="nav-item">
                       <NuxtLink to="/whitepaper/problem" class="nav-link">

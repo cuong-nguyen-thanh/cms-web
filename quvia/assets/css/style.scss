@@ -8599,6 +8599,7 @@ Page-navigation Area Style*/
     outline: 0;
     transition: 0.5s;
     font-weight: 500;
+    color: $body-color;
 
     &:focus {
       border-color: $main-color;

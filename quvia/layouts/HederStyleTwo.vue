@@ -10,12 +10,6 @@
                                 RepubliK Official Group
                             </a>
                         </li>
-<!--                        <li>-->
-<!--                            <a href="mailto:hello@republik.io">-->
-<!--                                <i class="bx bx-envelope"></i>-->
-<!--                                hello@republik.io-->
-<!--                            </a>-->
-<!--                        </li>-->
                     </ul>
                 </div>
 

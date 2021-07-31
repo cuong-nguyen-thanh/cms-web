@@ -6839,6 +6839,19 @@ Blog Details Area Style
 .blog-details-area {
   .blog-details-desc {
     .article-content {
+      ul {
+        list-style: inherit;
+        padding-left: 40px;
+        margin: 10px 0;
+
+        ul {
+          list-style: circle;
+        }
+
+        li {
+          padding: 5px 0;
+        }
+      }
       a {
         color: #007bff;
         &:hover {
@@ -8600,6 +8613,7 @@ Page-navigation Area Style*/
     transition: 0.5s;
     font-weight: 500;
     color: $body-color;
+    -webkit-appearance:none;
 
     &:focus {
       border-color: $main-color;

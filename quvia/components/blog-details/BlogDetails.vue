@@ -5,30 +5,6 @@
         <div class="col-lg-8 col-md-12">
           <div class="blog-details-desc">
             <div class="article-content">
-              <!--                            <div class="entry-meta">-->
-              <!--                                <ul>-->
-              <!--                                    <li>-->
-              <!--                                        <span>Posted On:</span>-->
-              <!--                                        <a href="#">-->
-              <!--                                            {{details.date}}-->
-              <!--                                        </a>-->
-              <!--                                    </li>-->
-              <!--                                    <li>-->
-              <!--                                        <span>Posted By:</span>-->
-              <!--                                        <a href="#">-->
-              <!--                                            {{details.name}}-->
-              <!--                                        </a>-->
-              <!--                                    </li>-->
-              <!--                                </ul>-->
-              <!--                            </div>-->
-              <!--                            <h3>-->
-              <!--                                {{details[0].title}}-->
-              <!--                            </h3>-->
-
-<!--              <div v-if="details.img !== null" class="article-image">-->
-<!--                <img :src="details.img.url" alt="image">-->
-<!--              </div>-->
-
               <span v-html="details.longText"></span>
             </div>
 

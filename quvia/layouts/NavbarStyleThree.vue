@@ -146,10 +146,7 @@
                   <!--                  <SidebarModal/>-->
                   <!--                </div>-->
                 </b-collapse>
-                <div class="search-form search-form-small">
-                  <input type="search" class="search-field" placeholder="Get Updates...">
-                  <i class='bx bx-mail-send'></i>
-                </div>
+                <GetUpdates :is-small="true"></GetUpdates>
               </client-only>
             </div>
           </nav>
@@ -162,12 +159,14 @@
 <script>
 import HederStyleTwo from '../layouts/HederStyleTwo'
 import SidebarModal from '../layouts/SidebarModal'
+import GetUpdates from '../components/Common/GetUpdates'
 
 export default {
   name: 'NavbarStyleThree',
   components: {
     SidebarModal,
-    HederStyleTwo
+    HederStyleTwo,
+    GetUpdates
   },
 
   data() {

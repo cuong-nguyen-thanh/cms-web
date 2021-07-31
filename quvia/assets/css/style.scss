@@ -6839,6 +6839,12 @@ Blog Details Area Style
 .blog-details-area {
   .blog-details-desc {
     .article-content {
+      ol {
+        ul {
+          list-style: circle;
+        }
+      }
+
       ul {
         list-style: inherit;
         padding-left: 40px;

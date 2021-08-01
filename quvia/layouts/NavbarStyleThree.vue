@@ -108,7 +108,7 @@
                         </li>
 
                         <li class="nav-item">
-                          <NuxtLink to="/core-team" class="nav-link">
+                          <NuxtLink to="/whitepaper/core-team" class="nav-link">
                             Team
                             <i class='bx bx-chevron-right'></i>
                           </NuxtLink>

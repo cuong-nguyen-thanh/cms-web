@@ -62,8 +62,8 @@ export default {
     runtime: true, // Support `$md()`
   },
   strapi: {
-    // url: 'http://47.241.111.147:1337',
-    url: 'http://localhost:1337',
+    url: 'http://47.241.111.147:1337',
+    // url: 'http://localhost:1337',
     entities: [
       {name: 'sitelogo', type: 'single'},
       {name: 'bannerdefaulthomepage', type: 'single'},

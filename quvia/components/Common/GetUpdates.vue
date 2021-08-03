@@ -30,7 +30,7 @@ export default {
   props: ['isSmall'],
 
   methods: {
-    handleKeyUp: function(event) {
+     handleKeyUp: async function(event) {
       event.preventDefault();
       this.emailValid = true;
 
@@ -38,6 +38,18 @@ export default {
         if (!this.validateEmail(this.email)) {
           this.emailValid = false;
         } else {
+          const today = new Date();
+          try {
+            await this.$strapi.create('emails',
+              {
+                name: this.email,
+                time: today.toISOString().substring(0, 19)
+              }
+            )
+          } catch (error) {
+            console.log(error)
+          }
+
           this.emailValid = true;
           this.emailSubmit = true;
         }

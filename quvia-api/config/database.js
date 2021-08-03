@@ -8,6 +8,7 @@ module.exports = ({ env }) => ({
         // host: env('DATABASE_HOST', '107.120.70.222'),
         // host: env('DATABASE_HOST', '127.0.0.1'),
         host: env('DATABASE_HOST', 'pgm-gs5204ghj2439f1s153650.pgsql.singapore.rds.aliyuncs.com'),
+        // host: env('DATABASE_HOST', 'pgm-gs5204ghj2439f1sbo.pgsql.singapore.rds.aliyuncs.com'),
         // port: env.int('DATABASE_PORT', 5432),
         port: env.int('DATABASE_PORT', 1921),
         // database: env('DATABASE_NAME', 'quvia-api'),

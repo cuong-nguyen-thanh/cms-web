@@ -5,7 +5,7 @@
         <div class="col-lg-8 col-md-12">
           <div class="blog-details-desc">
             <div class="article-content">
-              <span v-html="details.longText"></span>
+              <span v-html="details.content"></span>
             </div>
 
             <div class="post-navigation">
@@ -30,7 +30,7 @@
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <BlogSidebar :blogs="blogs" :groups="groups" :item="details"/>
+          <BlogSidebar :whitepapers="whitepapers" :groups="groups" :item="details"/>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ export default {
   components: {
     BlogSidebar
   },
-  props: ['detailsContent', 'blogs', 'groups'],
+  props: ['detailsContent', 'whitepapers', 'groups'],
   data: function () {
     return {
       details: this.detailsContent,

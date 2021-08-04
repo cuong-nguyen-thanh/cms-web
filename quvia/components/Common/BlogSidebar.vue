@@ -1,16 +1,16 @@
 <template>
   <div class="widget-area" id="secondary">
     <div class="widget widget_categories" v-for="(group, index) in groups">
-      <a :href="`/whitepaper/${blogs[group][0].slug}`">
+      <a :href="whitepapers[group].length > 0 ? `/whitepaper/${whitepapers[group][0].slug}` : '#'">
         <h3 class="widget-title">
           {{ group }}
         </h3>
       </a>
       <div class="post-wrap" v-if="group === item.group">
         <ul>
-          <li v-for="(blog, i) in blogs[group]" :class="{'sidebar-item-active': blog.slug === item.slug}">
-            <a :href="`/whitepaper/${blog.slug}`">
-              {{ blog.title }}
+          <li v-for="(whitepaper, i) in whitepapers[group]" :class="{'sidebar-item-active': whitepaper.slug === item.slug}">
+            <a :href="`/whitepaper/${whitepaper.slug}`">
+              {{ whitepaper.title }}
             </a>
           </li>
         </ul>
@@ -23,10 +23,13 @@
 
 export default {
   name: 'BlogSidebar',
-  props: ['blogs', 'groups', 'item'],
+  props: ['whitepapers', 'groups', 'item'],
   data: function () {
+    console.log(this.groups)
+    console.log(this.whitepapers)
+    console.log(this.item)
     return {
-      blogList: this.blogs
+      blogList: this.whitepapers
     }
   }
 }

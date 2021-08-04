@@ -1,273 +1,193 @@
 <template>
-    <div class="header-area fixed-top">
-<!--        <TopHeader />-->
+  <header class="header-area-six fixed-top">
+<!--    <HederStyleTwo/>-->
 
-        <div class="nav-area">
-            <div :class="['navbar-area', {'is-sticky': isSticky}]">
-                <div class="main-nav">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid">
-                            <NuxtLink
-                                v-if="logo !== null"
-                                class="navbar-brand"
-                                to="/"
-                            >
-                                <img :src="logo.img.url" alt="image">
-                            </NuxtLink>
+    <div class="nav-area-six">
+      <div :class="['navbar-area', {'is-sticky': isSticky}]">
+        <div class="main-nav">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <client-only>
+                <NuxtLink class="navbar-brand" to="/">
+                  <img src="~/assets/images/republik-logo.png" alt="image">
+                </NuxtLink>
 
-                            <b-navbar-toggle target="navbarSupportedContent">
-                                <span class="icon-bar top-bar"></span>
-                                <span class="icon-bar middle-bar"></span>
-                                <span class="icon-bar bottom-bar"></span>
-                            </b-navbar-toggle>
+                <b-navbar-toggle target="navbarSupportedContent">
+                  <span class="icon-bar top-bar"></span>
+                  <span class="icon-bar middle-bar"></span>
+                  <span class="icon-bar bottom-bar"></span>
+                </b-navbar-toggle>
 
-                            <b-collapse class="collapse navbar-collapse" id="navbarSupportedContent" is-nav>
-                                <ul class="navbar-nav m-auto">
-                                    <li class="nav-item">
-                                        <NuxtLink to="/#" class="nav-link">
-                                            Home
-                                            <i class='bx bx-chevron-right'></i>
-                                        </NuxtLink>
+                <b-collapse class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" is-nav>
+                  <ul class="navbar-nav m-auto">
+<!--                    <li class="nav-item">-->
+<!--                      <NuxtLink to="/#" class="nav-link">-->
+<!--                        Home-->
+<!--                        <i class='bx bx-chevron-right'></i>-->
+<!--                      </NuxtLink>-->
 
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <NuxtLink to="/" class="nav-link" exact>
-                                                    Home One
-                                                </NuxtLink>
-                                            </li>
+<!--                    </li>-->
 
-                                            <li class="nav-item">
-                                                <NuxtLink to="/home-two" class="nav-link">
-                                                    Home Two
-                                                </NuxtLink>
-                                            </li>
+                    <li class="nav-item">
+                      <NuxtLink to="/whitepaper/problem" class="nav-link">
+                        Whitepaper
+                      </NuxtLink>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <NuxtLink to="/whitepaper/problem" class="nav-link">
+                            The Creator Economy
+                            <i class='bx bx-chevron-right'></i>
+                          </NuxtLink>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/problem" class="nav-link">
+                                Problem
+                              </NuxtLink>
+                            </li>
 
-                                            <li class="nav-item">
-                                                <NuxtLink to="/home-three" class="nav-link">
-                                                    Home Three
-                                                </NuxtLink>
-                                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/opportunity" class="nav-link">
+                                Opportunity
+                              </NuxtLink>
+                            </li>
+                          </ul>
+                        </li>
 
-                                            <li class="nav-item">
-                                                <NuxtLink to="/home-four" class="nav-link">
-                                                    Home Four
-                                                </NuxtLink>
-                                            </li>
+                        <li class="nav-item">
+                          <NuxtLink to="/whitepaper/introduction" class="nav-link">
+                            RepubliK
+                            <i class='bx bx-chevron-right'></i>
+                          </NuxtLink>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/introduction" class="nav-link">
+                                Introduction
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/the-rad-token" class="nav-link">
+                                The RAD Token
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/exposure-and-talent-discovery" class="nav-link">
+                                Exposure and Talent Discovery
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/virtual-performance-platform" class="nav-link">
+                                Virtual Event Platform
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/creator-journey" class="nav-link">
+                                Creator Journey
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/keeping-creators-on-platform" class="nav-link">
+                                Keeping Creators on Platform
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/market-entry" class="nav-link">
+                                Market Entry
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/distribution" class="nav-link">
+                                Distribution
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/release-schedule" class="nav-link">
+                                Release Schedule
+                              </NuxtLink>
+                            </li>
+                          </ul>
+                        </li>
 
-                                            <li class="nav-item">
-                                                <NuxtLink to="/home-five" class="nav-link">
-                                                    Home Five
-                                                </NuxtLink>
-                                            </li>
+                        <li class="nav-item">
+                          <NuxtLink to="/whitepaper/core-team" class="nav-link">
+                            Team
+                            <i class='bx bx-chevron-right'></i>
+                          </NuxtLink>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/core-team" class="nav-link">
+                                Core Team
+                              </NuxtLink>
+                            </li>
+                            <li class="nav-item">
+                              <NuxtLink to="/whitepaper/advisors" class="nav-link">
+                                Advisors
+                              </NuxtLink>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
 
-                                            <li class="nav-item">
-                                                <NuxtLink to="/home-six" class="nav-link">
-                                                    Home Six
-                                                </NuxtLink>
-                                            </li>
-                                        </ul>
-                                    </li>
+                  <!--                <div class="others-option">-->
+                  <!--                  <div class="cart-icon">-->
+                  <!--                    <NuxtLink to="/cart" class="cart">-->
+                  <!--                      <i class="bx bx-shopping-bag"></i>-->
+                  <!--                      <span>3</span>-->
+                  <!--                    </NuxtLink>-->
+                  <!--                  </div>-->
 
-                                    <li class="nav-item">
-                                        <NuxtLink to="/about-us" class="nav-link">
-                                            About Us
-                                        </NuxtLink>
-                                    </li>
+                  <!--                  <div class="sidebar-menu">-->
+                  <!--                    <div class="burger-menu" v-b-modal.modal-1>-->
+                  <!--                      <i class="bx bx-menu-alt-left"></i>-->
+                  <!--                    </div>-->
+                  <!--                  </div>-->
 
-                                    <li class="nav-item">
-                                        <NuxtLink to="/#" class="nav-link">
-                                            Pages
-                                            <i class='bx bx-chevron-right'></i>
-                                        </NuxtLink>
-
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <NuxtLink to="/pricing" class="nav-link">
-                                                    Pricing
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/testimonials" class="nav-link">
-                                                    Testimonials
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/team" class="nav-link">
-                                                    Team
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/faq" class="nav-link">
-                                                    FAQ
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/#" class="nav-link">
-                                                    User
-                                                    <i class='bx bx-chevron-right'></i>
-                                                </NuxtLink>
-
-                                                <ul class="dropdown-menu">
-                                                    <li class="nav-item">
-                                                        <NuxtLink to="/log-in" class="nav-link">
-                                                            Log In
-                                                        </NuxtLink>
-                                                    </li>
-
-                                                    <li class="nav-item">
-                                                        <NuxtLink to="/sign-in" class="nav-link">
-                                                            Sign In
-                                                        </NuxtLink>
-                                                    </li>
-
-                                                    <li class="nav-item">
-                                                        <NuxtLink to="/recover-password" class="nav-link">
-                                                            Recover Password
-                                                        </NuxtLink>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/terms-conditions" class="nav-link">
-                                                    Terms & Conditions
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/privacy-policy" class="nav-link">
-                                                    Privacy Policy
-                                                </NuxtLink>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <NuxtLink to="/#" class="nav-link">
-                                            Services
-                                            <i class='bx bx-chevron-right'></i>
-                                        </NuxtLink>
-
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                            <NuxtLink to="/services-one" class="nav-link">
-                                                Services One
-                                            </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/services-two" class="nav-link">
-                                                    Services Two
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/services-three" class="nav-link">
-                                                    Services Three
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/services-details" class="nav-link">
-                                                    Services Details
-                                                </NuxtLink>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <NuxtLink to="/#" class="nav-link">
-                                            Blog
-                                            <i class='bx bx-chevron-right'></i>
-                                        </NuxtLink>
-
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <NuxtLink to="/blog-grid" class="nav-link">
-                                                    Blog Grid
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/blog-left-sidebar" class="nav-link">
-                                                    Blog Left Sidebar
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink to="/blog-right-sidebar" class="nav-link">
-                                                    Blog Right Sidebar
-                                                </NuxtLink>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <NuxtLink :to="{ name: `blog/${1}` }" class="nav-link">
-                                                    Blog Details
-                                                </NuxtLink>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <NuxtLink to="/contact" class="nav-link">
-                                            Contact
-                                        </NuxtLink>
-                                    </li>
-                                </ul>
-
-                                <div class="others-option">
-                                    <div class="get-quote">
-                                      <NuxtLink to="/blog/1" class="default-btn">
-                                        Sign In
-                                      </NuxtLink>
-<!--                                        <a href="#" class="default-btn">-->
-<!--                                            Get A Quote-->
-<!--                                        </a>-->
-                                    </div>
-                                </div>
-                            </b-collapse>
-                        </div>
-                    </nav>
-                </div>
+                  <!--                  <SidebarModal/>-->
+                  <!--                </div>-->
+                </b-collapse>
+                <GetUpdates :is-small="true"></GetUpdates>
+              </client-only>
             </div>
+          </nav>
         </div>
+      </div>
     </div>
+  </header>
 </template>
 
 <script>
-import TopHeader from '../layouts/TopHeader'
+import HederStyleTwo from '../layouts/HederStyleTwo'
+import GetUpdates from '../components/Common/GetUpdates'
 
 export default {
-    name: 'Navbar',
-    components: {
-        TopHeader
-    },
+  name: 'NavbarStyleThree',
+  components: {
+    HederStyleTwo,
+    GetUpdates
+  },
 
-    data(){
-        return {
-            isSticky: false,
-            logo: null
-        }
-    },
-
-    mounted(){
-        const that = this
-        window.addEventListener('scroll', () => {
-            let scrollPos = window.scrollY
-            if(scrollPos >= 100){
-                that.isSticky = true
-            } else {
-                that.isSticky = false
-            }
-        })
-    },
-
-    created: async function(){
-        this.logo = await this.$strapi.find('sitelogo')
+  data() {
+    return {
+      isSticky: false,
+      logo: null
     }
+  },
+
+  mounted() {
+    const that = this
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY
+      if (scrollPos >= 100) {
+        that.isSticky = true
+      } else {
+        that.isSticky = false
+      }
+    })
+  },
+
+  created: async function () {
+    // this.logo = await this.$strapi.find('sitelogo')
+  }
 }
 </script>

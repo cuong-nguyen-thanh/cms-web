@@ -134,13 +134,11 @@
 
 <script>
 import HederStyleTwo from '../layouts/HederStyleTwo'
-import SidebarModal from '../layouts/SidebarModal'
 import GetUpdates from '../components/Common/GetUpdates'
 
 export default {
-  name: 'NavbarStyleThree',
+  name: 'NavbarStyleWhitepaper',
   components: {
-    SidebarModal,
     HederStyleTwo,
     GetUpdates
   },

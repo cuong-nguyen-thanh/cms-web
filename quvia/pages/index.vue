@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import NavbarStyleThree from '../layouts/NavbarStyleThree'
-import MainBanner from '../components/home-six/MainBanner'
+import NavbarStyleThree from '../layouts/Navbar'
+import MainBanner from '../components/index/MainBanner'
 import Footer from '../layouts/Footer'
 
 export default {

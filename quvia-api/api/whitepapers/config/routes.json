@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/whitepapers",
+      "handler": "whitepapers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whitepapers/count",
+      "handler": "whitepapers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whitepapers/:id",
+      "handler": "whitepapers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/whitepapers",
+      "handler": "whitepapers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/whitepapers/:id",
+      "handler": "whitepapers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/whitepapers/:id",
+      "handler": "whitepapers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

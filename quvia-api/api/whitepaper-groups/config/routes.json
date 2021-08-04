@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/whitepaper-groups",
+      "handler": "whitepaper-groups.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whitepaper-groups/count",
+      "handler": "whitepaper-groups.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whitepaper-groups/:id",
+      "handler": "whitepaper-groups.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/whitepaper-groups",
+      "handler": "whitepaper-groups.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/whitepaper-groups/:id",
+      "handler": "whitepaper-groups.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/whitepaper-groups/:id",
+      "handler": "whitepaper-groups.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

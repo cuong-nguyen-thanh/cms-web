@@ -59,16 +59,6 @@
 
 export default {
   name: 'Footer',
-
-  data() {
-    return {
-      footer: null
-    }
-  },
-
-  created: async function () {
-    this.footer = await this.$strapi.find('footer')
-  }
 }
 </script>
 

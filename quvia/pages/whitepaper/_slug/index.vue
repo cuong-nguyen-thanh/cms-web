@@ -8,11 +8,10 @@
     <div v-if="detail !== null">
       <BlogDetails
         v-bind:detailsContent="detail"
-        v-bind:blogs="blogs"
+        v-bind:whitepapers="whitepapers"
         v-bind:groups="groups"
       />
     </div>
-<!--    <FooterStyleTwo/>-->
     <Footer/>
   </div>
 </template>
@@ -21,24 +20,20 @@
 import NavbarStyleWhitepaper from '../../../layouts/NavbarStyleWhitepaper'
 import PageTitle from '../../../components/Common/PageTitle'
 import BlogDetails from '../../../components/blog-details/BlogDetails'
-import FooterStyleTwo from '../../../layouts/FooterStyleTwo'
 import Footer from '../../../layouts/Footer'
-import CopyRight from '../../../layouts/CopyRight'
 
 export default {
   components: {
     NavbarStyleWhitepaper,
     PageTitle,
     BlogDetails,
-    Footer,
-    FooterStyleTwo,
-    CopyRight,
+    Footer
   },
 
   data() {
     return {
       detail: null,
-      blogs: {},
+      whitepapers: {},
       groups: []
     }
   },
@@ -48,30 +43,33 @@ export default {
     if (!slug) {
       slug = 'problem'
     }
-    console.log(slug)
-    const blogDetails = await this.$strapi.find('blogdetails', {_sort: 'groupOrder'})
-    this.blogs = blogDetails.reduce((r, a) => {
-      if (!r[a.group]) {
-        r[a.group] = []
-        this.groups.push(a.group);
+
+    const groups = await this.$strapi.find('whitepaper-groups', {_sort: 'order'})
+    this.whitepapers = {}
+    const flatWhitepapers = []
+    groups.forEach(g => {
+      this.groups.push(g.name);
+      g.whitepapers.sort((wp1, wp2) => wp1.order < wp2.order);
+      for (let i = 0; i < g.whitepapers.length; i++) {
+        g.whitepapers[i]['group'] = g.name;
+        flatWhitepapers.push(g.whitepapers[i]);
       }
-      r[a.group].push(a);
-      return r;
-    }, Object.create(null));
+      this.whitepapers[g.name] = g.whitepapers;
+    })
 
 
-    const index = blogDetails.findIndex(item => {
+    const index = flatWhitepapers.findIndex(item => {
       return item.slug === slug;
     });
     if (index != -1) {
-      this.detail = blogDetails[index];
+      this.detail = flatWhitepapers[index];
       this.detail['prev'] = null;
       this.detail['next'] = null;
       if (index > 0) {
-        this.detail['prev'] = blogDetails[index - 1];
+        this.detail['prev'] = flatWhitepapers[index - 1];
       }
-      if (index < blogDetails.length - 1) {
-        this.detail['next'] = blogDetails[index + 1];
+      if (index < flatWhitepapers.length - 1) {
+        this.detail['next'] = flatWhitepapers[index + 1];
       }
     }
   }

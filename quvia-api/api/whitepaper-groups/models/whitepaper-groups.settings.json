@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whitepapergroups",
+  "info": {
+    "name": "Whitepaper Groups",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 1
+    },
+    "whitepapers": {
+      "via": "group",
+      "collection": "whitepapers"
+    }
+  }
+}

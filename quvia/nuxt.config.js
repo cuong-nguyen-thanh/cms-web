@@ -66,7 +66,6 @@ export default {
     // url: 'http://localhost:1337',
     entities: [
       {name: 'sitelogo', type: 'single'},
-      {name: 'blogdetails', type: 'collection'},
       {name: 'emails', type: 'collection'},
       {name: 'whitepapers', type: 'collection'},
       {name: 'whitepaper-groups', type: 'collection'},

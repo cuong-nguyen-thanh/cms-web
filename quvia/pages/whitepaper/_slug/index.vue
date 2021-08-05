@@ -49,7 +49,7 @@ export default {
     const flatWhitepapers = []
     groups.forEach(g => {
       this.groups.push(g.name);
-      g.whitepapers.sort((wp1, wp2) => wp1.order < wp2.order);
+      g.whitepapers.sort((wp1, wp2) => wp1.order > wp2.order && 1 || -1);
       for (let i = 0; i < g.whitepapers.length; i++) {
         g.whitepapers[i]['group'] = g.name;
         flatWhitepapers.push(g.whitepapers[i]);

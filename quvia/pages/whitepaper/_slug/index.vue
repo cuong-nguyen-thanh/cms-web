@@ -57,7 +57,6 @@ export default {
       this.whitepapers[g.name] = g.whitepapers;
     })
 
-
     const index = flatWhitepapers.findIndex(item => {
       return item.slug === slug;
     });

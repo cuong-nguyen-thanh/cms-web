@@ -1,0 +1,11 @@
+{
+  "favicon": {
+    "path": "favicon.png",
+    "maxAge": 86400000
+  },
+  "public": {
+    "path": "./public",
+    "maxAge": 60000,
+    "defaultIndex": true
+  }
+}

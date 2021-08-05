@@ -43,7 +43,7 @@ export default {
             await this.$strapi.create('emails',
               {
                 name: this.email,
-                time: today.toISOString().substring(0, 19)
+                time: today.toISOString().substring(0, 19).replace('T', ' ')
               }
             )
           } catch (error) {

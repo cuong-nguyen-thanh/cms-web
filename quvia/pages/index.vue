@@ -8,7 +8,7 @@
 
 <script>
 import NavbarStyleThree from '../layouts/Navbar'
-import MainBanner from '../components/index/MainBanner'
+import MainBanner from '../components/Common/MainBanner'
 import Footer from '../layouts/Footer'
 
 export default {

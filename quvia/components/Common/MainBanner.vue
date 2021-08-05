@@ -33,7 +33,7 @@
 import GetUpdates from '../../components/Common/GetUpdates'
 
 export default {
-  name: 'Banner',
+  name: 'MainBanner',
   components: {
     GetUpdates
   }

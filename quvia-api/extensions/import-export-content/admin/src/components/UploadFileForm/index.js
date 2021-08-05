@@ -49,11 +49,13 @@ function UploadFileForm({ onSubmit }) {
             acceptMimeTypes={FORMATS.map(({ mimeType }) => mimeType)}
             acceptFilesTypes={FORMATS.map(({ ext }) => ext)}
             onUploadFile={handleFileUpload}
-            onUploadError={() =>
+            onUploadError={(err) => {
+              console.log(err)
               strapi.notification.toggle({
                 type: "warning",
                 message: "import.file.type.error",
               })
+            }
             }
           />
         )}

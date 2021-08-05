@@ -75,7 +75,7 @@
                               </NuxtLink>
                             </li>
                             <li class="nav-item">
-                              <NuxtLink to="/whitepaper/virtual-performance-platform" class="nav-link">
+                              <NuxtLink to="/whitepaper/virtual-event-platform" class="nav-link">
                                 Virtual Event Platform
                               </NuxtLink>
                             </li>

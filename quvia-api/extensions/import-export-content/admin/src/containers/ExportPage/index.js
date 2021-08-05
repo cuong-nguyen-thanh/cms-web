@@ -22,7 +22,7 @@ import { FilterIcon } from "strapi-helper-plugin";
 import BASE_OPTIONS from "../../constants/options";
 import OptionsExport from "../../components/OptionsExport";
 
-const exportFormatsOptions = FORMATS.map(({ name, mimeType }) => ({
+const exportFormatsOptions = FORMATS.filter(t => t.name !== 'csv-excel').map(({ name, mimeType }) => ({
   label: name,
   value: mimeType,
 }));

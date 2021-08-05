@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "collectionName": "emails",
   "info": {
     "name": "emails",
@@ -12,7 +13,8 @@
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "time": {
       "type": "string"

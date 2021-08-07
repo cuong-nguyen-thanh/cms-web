@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_widgets_title",
+  "info": {
+    "name": "Title",
+    "icon": "text-height",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "string"
+    },
+    "Font_Size": {
+      "type": "enumeration",
+      "enum": [
+        "Large",
+        "Medium",
+        "Small"
+      ],
+      "default": "Medium",
+      "required": true
+    }
+  }
+}

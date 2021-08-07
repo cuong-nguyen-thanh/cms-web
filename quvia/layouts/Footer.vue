@@ -5,22 +5,22 @@
         <div class="container">
           <div class="row">
             <div class="col-12 footer-logo">
-              <img src="~/assets/images/logo_footer.png" alt="footer">
+              <img v-if="data" :src="data.Logo.url" alt="footer">
             </div>
             <div class="col-12 footer-line">
-              <p>The Next-Generation Creator Platform, Powered By Blockchain Technology</p>
+              <p v-if="data">{{data.Slogan}}</p>
             </div>
 
             <div class="col-12 footer-line">
               <ul>
                 <li>
-                  <NuxtLink to="/whitepaper/problem">
+                  <NuxtLink v-if="startLink" :to="`/whitepaper/${startLink}`">
                     <i class='bx bx-file'></i>
                     &nbsp;Whitepaper
                   </NuxtLink>
                 </li>
                 <li>
-                  <a href="https://t.me/joinchat/9bND3ZH32pgzMTVl" target="_blank">
+                  <a v-if="data" :href="data.Telegram" target="_blank">
                     <i class='bx bxl-telegram'></i>
                     &nbsp;Telegram
                   </a>
@@ -37,8 +37,8 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 copy-right">
-              <p>
-                Copyright ©2021 Rad RepubliK Pte Ltd.
+              <p v-if="data">
+                {{data.CopyRight}}
               </p>
           </div>
         </div>
@@ -59,6 +59,7 @@
 
 export default {
   name: 'Footer',
+  props: ['data', 'startLink'],
 }
 </script>
 

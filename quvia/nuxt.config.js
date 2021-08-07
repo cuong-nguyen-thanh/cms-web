@@ -65,7 +65,7 @@ export default {
     url: 'http://cms.republik.io',
     // url: 'http://localhost:1337',
     entities: [
-      {name: 'sitelogo', type: 'single'},
+      {name: 'home-page', type: 'single'},
       {name: 'emails', type: 'collection'},
       {name: 'whitepapers', type: 'collection'},
       {name: 'whitepaper-groups', type: 'collection'},

@@ -6,7 +6,7 @@
           {{ group }}
         </h3>
       </a>
-      <div class="post-wrap" v-if="group === item.group">
+      <div class="post-wrap" v-if="group === item.group.name">
         <ul>
           <li v-for="(whitepaper, i) in whitepapers[group]" :class="{'sidebar-item-active': whitepaper.slug === item.slug}">
             <a :href="`/whitepaper/${whitepaper.slug}`">

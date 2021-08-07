@@ -4,13 +4,16 @@
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-12">
           <div class="banner-text">
-            <span>WELCOME TO REPUBLIK</span>
-            <h1>The next-generation creator platform, powered by blockchain technology</h1>
-            <p>A scalable ecosystem, built from the ground up, to equitably distribute value by giving everyone a stake
-              in the economy.</p>
+            <template v-if="data">
+                <template v-for="(title, i) in data.Titles">
+                    <h1 v-if="title.Font_Size === 'Large'" :class="{'first-item-margin': i === 0}">{{ title.Value }}</h1>
+                    <p v-else-if="title.Font_Size === 'Medium'" :class="{'first-item-margin': i === 0}">{{ title.Value }}</p>
+                    <span v-else :class="{'first-item-margin': i === 0}">{{ title.Value }}</span>
+                </template>
+            </template>
 
             <div class="banner-btn wow fadeInUp" data-wow-delay="1s">
-              <NuxtLink class="default-btn six" to="/whitepaper/problem">
+              <NuxtLink v-if="startLink" class="default-btn six" :to="`/whitepaper/${startLink}`">
                 Read Whitepaper
               </NuxtLink>
               <GetUpdates></GetUpdates>
@@ -19,8 +22,8 @@
         </div>
 
         <div class="col-lg-6 col-md-12">
-          <div class="banner-img">
-            <img src="~/assets/images/landing.jpg" alt="Image">
+          <div class="banner-img" v-if="data">
+            <img :src="data.Banner.url" alt="">
           </div>
         </div>
       </div>
@@ -36,6 +39,13 @@ export default {
   name: 'MainBanner',
   components: {
     GetUpdates
-  }
+  },
+  props: ['data', 'startLink'],
 }
 </script>
+
+<style scoped>
+.first-item-margin {
+    margin-bottom: 10px !important;
+}
+</style>

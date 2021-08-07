@@ -1,6 +1,12 @@
 <template>
   <div>
-    <NavbarStyleWhitepaper/>
+    <Navbar
+      v-bind:disableSticky="true"
+      v-bind:logo="header ? header.Logo.url : ''"
+      v-bind:whitepapers="whitepapers"
+      v-bind:groups="groups"
+      v-bind:startLink="startLink"
+    />
     <PageTitle
       v-if="detail !== null"
       :pageTitle="detail.title"
@@ -12,19 +18,22 @@
         v-bind:groups="groups"
       />
     </div>
-    <Footer/>
+    <Footer
+      v-bind:data="footer"
+      v-bind:startLink="startLink"
+    />
   </div>
 </template>
 
 <script>
-import NavbarStyleWhitepaper from '../../../layouts/NavbarStyleWhitepaper'
+import Navbar from '../../../layouts/Navbar'
 import PageTitle from '../../../components/Common/PageTitle'
 import BlogDetails from '../../../components/blog-details/BlogDetails'
 import Footer from '../../../layouts/Footer'
 
 export default {
   components: {
-    NavbarStyleWhitepaper,
+    Navbar,
     PageTitle,
     BlogDetails,
     Footer
@@ -34,7 +43,10 @@ export default {
     return {
       detail: null,
       whitepapers: {},
-      groups: []
+      groups: [],
+      startLink: null,
+      header: null,
+      footer: null,
     }
   },
 
@@ -44,22 +56,41 @@ export default {
       slug = 'problem'
     }
 
-    const groups = await this.$strapi.find('whitepaper-groups', {_sort: 'order'})
+    const whitepapers = await this.$strapi.find('whitepapers');
+    const homePage = await this.$strapi.find('home-page');
+
+    this.header = homePage.Header;
+    this.footer = homePage.Footer;
     this.whitepapers = {}
     const flatWhitepapers = []
-    groups.forEach(g => {
-      this.groups.push(g.name);
-      g.whitepapers.sort((wp1, wp2) => wp1.order > wp2.order && 1 || -1);
-      for (let i = 0; i < g.whitepapers.length; i++) {
-        g.whitepapers[i]['group'] = g.name;
-        flatWhitepapers.push(g.whitepapers[i]);
+
+    whitepapers.sort((wp1, wp2) => {
+      if (wp1.group.order > wp2.group.order) {
+        return 1;
+      } else if (wp1.group.order < wp2.group.order) {
+        return -1;
+      } else {
+        return wp1.order > wp2.order && 1 || -1
       }
-      this.whitepapers[g.name] = g.whitepapers;
-    })
+    });
+
+    whitepapers.forEach(w => {
+      flatWhitepapers.push(w);
+      if (!this.whitepapers[w.group.name]) {
+        this.groups.push(w.group.name);
+        this.whitepapers[w.group.name] = [];
+      }
+      this.whitepapers[w.group.name].push(w);
+    });
+
+    if (this.groups.length > 0) {
+      this.startLink = this.whitepapers[this.groups[0]][0].slug;
+    }
 
     const index = flatWhitepapers.findIndex(item => {
       return item.slug === slug;
     });
+
     if (index != -1) {
       this.detail = flatWhitepapers[index];
       this.detail['prev'] = null;

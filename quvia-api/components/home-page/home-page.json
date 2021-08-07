@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_page_header",
+  "info": {
+    "name": "Header",
+    "icon": "heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "widgets.header",
+      "required": true
+    }
+  }
+}

@@ -9,7 +9,7 @@
             <div class="container-fluid">
               <client-only>
                 <NuxtLink class="navbar-brand" to="/">
-                  <img src="~/assets/images/republik-logo.png" alt="image">
+                  <img :src="logo" alt="">
                 </NuxtLink>
 
                 <b-navbar-toggle target="navbarSupportedContent">
@@ -20,107 +20,20 @@
 
                 <b-collapse class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" is-nav>
                   <ul class="navbar-nav m-auto">
-<!--                    <li class="nav-item">-->
-<!--                      <NuxtLink to="/#" class="nav-link">-->
-<!--                        Home-->
-<!--                        <i class='bx bx-chevron-right'></i>-->
-<!--                      </NuxtLink>-->
-
-<!--                    </li>-->
-
                     <li class="nav-item">
-                      <NuxtLink to="/whitepaper/problem" class="nav-link">
+                      <NuxtLink :to="`/whitepaper/${startLink}`" class="nav-link">
                         Whitepaper
                       </NuxtLink>
                       <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <NuxtLink to="/whitepaper/problem" class="nav-link">
-                            The Creator Economy
+                        <li class="nav-item" v-for="(group, gi) in groups">
+                          <NuxtLink :to="whitepapers[group].length > 0 ? `/whitepaper/${whitepapers[group][0].slug}` : '#'" class="nav-link">
+                            {{ group }}
                             <i class='bx bx-chevron-right'></i>
                           </NuxtLink>
                           <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/problem" class="nav-link">
-                                Problem
-                              </NuxtLink>
-                            </li>
-
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/opportunity" class="nav-link">
-                                Opportunity
-                              </NuxtLink>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li class="nav-item">
-                          <NuxtLink to="/whitepaper/introduction" class="nav-link">
-                            RepubliK
-                            <i class='bx bx-chevron-right'></i>
-                          </NuxtLink>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/introduction" class="nav-link">
-                                Introduction
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/the-rad-token" class="nav-link">
-                                The RAD Token
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/exposure-and-talent-discovery" class="nav-link">
-                                Exposure and Talent Discovery
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/virtual-event-platform" class="nav-link">
-                                Virtual Event Platform
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/creator-journey" class="nav-link">
-                                Creator Journey
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/keeping-creators-on-platform" class="nav-link">
-                                Keeping Creators on Platform
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/market-entry" class="nav-link">
-                                Market Entry
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/distribution" class="nav-link">
-                                Distribution
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/release-schedule" class="nav-link">
-                                Release Schedule
-                              </NuxtLink>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li class="nav-item">
-                          <NuxtLink to="/whitepaper/core-team" class="nav-link">
-                            Team
-                            <i class='bx bx-chevron-right'></i>
-                          </NuxtLink>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/core-team" class="nav-link">
-                                Core Team
-                              </NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                              <NuxtLink to="/whitepaper/advisors" class="nav-link">
-                                Advisors
+                            <li class="nav-item" v-for="(whitepaper, wi) in whitepapers[group]">
+                              <NuxtLink :to="`/whitepaper/${whitepaper.slug}`" class="nav-link">
+                                {{ whitepaper.title }}
                               </NuxtLink>
                             </li>
                           </ul>
@@ -128,23 +41,6 @@
                       </ul>
                     </li>
                   </ul>
-
-                  <!--                <div class="others-option">-->
-                  <!--                  <div class="cart-icon">-->
-                  <!--                    <NuxtLink to="/cart" class="cart">-->
-                  <!--                      <i class="bx bx-shopping-bag"></i>-->
-                  <!--                      <span>3</span>-->
-                  <!--                    </NuxtLink>-->
-                  <!--                  </div>-->
-
-                  <!--                  <div class="sidebar-menu">-->
-                  <!--                    <div class="burger-menu" v-b-modal.modal-1>-->
-                  <!--                      <i class="bx bx-menu-alt-left"></i>-->
-                  <!--                    </div>-->
-                  <!--                  </div>-->
-
-                  <!--                  <SidebarModal/>-->
-                  <!--                </div>-->
                 </b-collapse>
                 <GetUpdates :is-small="true"></GetUpdates>
               </client-only>
@@ -167,27 +63,28 @@ export default {
     GetUpdates
   },
 
+  props: ['logo', 'startLink', 'whitepapers', 'groups', 'disableSticky'],
+
   data() {
     return {
-      isSticky: false,
-      logo: null
+      isSticky: false
     }
   },
 
   mounted() {
-    const that = this
-    window.addEventListener('scroll', () => {
-      let scrollPos = window.scrollY
-      if (scrollPos >= 100) {
-        that.isSticky = true
-      } else {
-        that.isSticky = false
-      }
-    })
-  },
-
-  created: async function () {
-    // this.logo = await this.$strapi.find('sitelogo')
+    if (!this.disableSticky) {
+      const that = this;
+      window.addEventListener('scroll', () => {
+        let scrollPos = window.scrollY
+        if (scrollPos >= 100) {
+          that.isSticky = true
+        } else {
+          that.isSticky = false
+        }
+      })
+    } else {
+      this.isSticky = true;
+    }
   }
 }
 </script>

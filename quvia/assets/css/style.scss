@@ -3819,14 +3819,18 @@ Banner Area Style
 
     p {
       font-size: 18px;
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
 
     span {
       font-size: 16px;
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 25px;
       font-weight: 400;
+    }
+
+    .banner-btn {
+      margin-top: 35px;
     }
 
     .default-btn {
@@ -8583,9 +8587,13 @@ Page-navigation Area Style*/
   text-align: center;
 }
 
-.navbar-brand img {
-  height: 24px;
-  width: auto;
+.navbar-brand {
+  max-width: 200px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .sidebar-item-active {

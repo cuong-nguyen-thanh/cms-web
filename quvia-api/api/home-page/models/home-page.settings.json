@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage",
+  "info": {
+    "name": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.home-page",
+      "required": true
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.footer",
+      "required": true
+    }
+  }
+}
